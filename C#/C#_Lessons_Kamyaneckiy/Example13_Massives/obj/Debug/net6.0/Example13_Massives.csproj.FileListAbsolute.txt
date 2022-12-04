@@ -1,0 +1,15 @@
+C:\Users\Max\Git Прошлые Уроки\CSharp_Lesson1\Example13_Massives\obj\Debug\net6.0\Example13_Massives.csproj.AssemblyReference.cache
+C:\Users\Max\Git Прошлые Уроки\CSharp_Lesson1\Example13_Massives\obj\Debug\net6.0\Example13_Massives.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Max\Git Прошлые Уроки\CSharp_Lesson1\Example13_Massives\obj\Debug\net6.0\Example13_Massives.AssemblyInfoInputs.cache
+C:\Users\Max\Git Прошлые Уроки\CSharp_Lesson1\Example13_Massives\obj\Debug\net6.0\Example13_Massives.AssemblyInfo.cs
+C:\Users\Max\Git Прошлые Уроки\CSharp_Lesson1\Example13_Massives\obj\Debug\net6.0\Example13_Massives.csproj.CoreCompileInputs.cache
+C:\Users\Max\Git Прошлые Уроки\CSharp_Lesson1\Example13_Massives\bin\Debug\net6.0\Example13_Massives.exe
+C:\Users\Max\Git Прошлые Уроки\CSharp_Lesson1\Example13_Massives\bin\Debug\net6.0\Example13_Massives.deps.json
+C:\Users\Max\Git Прошлые Уроки\CSharp_Lesson1\Example13_Massives\bin\Debug\net6.0\Example13_Massives.runtimeconfig.json
+C:\Users\Max\Git Прошлые Уроки\CSharp_Lesson1\Example13_Massives\bin\Debug\net6.0\Example13_Massives.dll
+C:\Users\Max\Git Прошлые Уроки\CSharp_Lesson1\Example13_Massives\bin\Debug\net6.0\Example13_Massives.pdb
+C:\Users\Max\Git Прошлые Уроки\CSharp_Lesson1\Example13_Massives\obj\Debug\net6.0\Example13_Massives.dll
+C:\Users\Max\Git Прошлые Уроки\CSharp_Lesson1\Example13_Massives\obj\Debug\net6.0\refint\Example13_Massives.dll
+C:\Users\Max\Git Прошлые Уроки\CSharp_Lesson1\Example13_Massives\obj\Debug\net6.0\Example13_Massives.pdb
+C:\Users\Max\Git Прошлые Уроки\CSharp_Lesson1\Example13_Massives\obj\Debug\net6.0\Example13_Massives.genruntimeconfig.cache
+C:\Users\Max\Git Прошлые Уроки\CSharp_Lesson1\Example13_Massives\obj\Debug\net6.0\ref\Example13_Massives.dll

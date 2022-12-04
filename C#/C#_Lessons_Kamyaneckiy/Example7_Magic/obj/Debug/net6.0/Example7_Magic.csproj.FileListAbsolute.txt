@@ -1,0 +1,15 @@
+C:\Users\Max\CSharp_Lesson1\Example7_Magic\bin\Debug\net6.0\Example7_Magic.exe
+C:\Users\Max\CSharp_Lesson1\Example7_Magic\bin\Debug\net6.0\Example7_Magic.deps.json
+C:\Users\Max\CSharp_Lesson1\Example7_Magic\bin\Debug\net6.0\Example7_Magic.runtimeconfig.json
+C:\Users\Max\CSharp_Lesson1\Example7_Magic\bin\Debug\net6.0\Example7_Magic.dll
+C:\Users\Max\CSharp_Lesson1\Example7_Magic\bin\Debug\net6.0\Example7_Magic.pdb
+C:\Users\Max\CSharp_Lesson1\Example7_Magic\obj\Debug\net6.0\Example7_Magic.csproj.AssemblyReference.cache
+C:\Users\Max\CSharp_Lesson1\Example7_Magic\obj\Debug\net6.0\Example7_Magic.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Max\CSharp_Lesson1\Example7_Magic\obj\Debug\net6.0\Example7_Magic.AssemblyInfoInputs.cache
+C:\Users\Max\CSharp_Lesson1\Example7_Magic\obj\Debug\net6.0\Example7_Magic.AssemblyInfo.cs
+C:\Users\Max\CSharp_Lesson1\Example7_Magic\obj\Debug\net6.0\Example7_Magic.csproj.CoreCompileInputs.cache
+C:\Users\Max\CSharp_Lesson1\Example7_Magic\obj\Debug\net6.0\Example7_Magic.dll
+C:\Users\Max\CSharp_Lesson1\Example7_Magic\obj\Debug\net6.0\refint\Example7_Magic.dll
+C:\Users\Max\CSharp_Lesson1\Example7_Magic\obj\Debug\net6.0\Example7_Magic.pdb
+C:\Users\Max\CSharp_Lesson1\Example7_Magic\obj\Debug\net6.0\Example7_Magic.genruntimeconfig.cache
+C:\Users\Max\CSharp_Lesson1\Example7_Magic\obj\Debug\net6.0\ref\Example7_Magic.dll

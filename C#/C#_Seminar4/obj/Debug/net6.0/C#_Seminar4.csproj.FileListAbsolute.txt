@@ -1,0 +1,15 @@
+C:\Users\Max\Git Прошлые Уроки\C#_Seminar4\bin\Debug\net6.0\C#_Seminar4.exe
+C:\Users\Max\Git Прошлые Уроки\C#_Seminar4\bin\Debug\net6.0\C#_Seminar4.deps.json
+C:\Users\Max\Git Прошлые Уроки\C#_Seminar4\bin\Debug\net6.0\C#_Seminar4.runtimeconfig.json
+C:\Users\Max\Git Прошлые Уроки\C#_Seminar4\bin\Debug\net6.0\C#_Seminar4.dll
+C:\Users\Max\Git Прошлые Уроки\C#_Seminar4\bin\Debug\net6.0\C#_Seminar4.pdb
+C:\Users\Max\Git Прошлые Уроки\C#_Seminar4\obj\Debug\net6.0\C#_Seminar4.csproj.AssemblyReference.cache
+C:\Users\Max\Git Прошлые Уроки\C#_Seminar4\obj\Debug\net6.0\C#_Seminar4.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Max\Git Прошлые Уроки\C#_Seminar4\obj\Debug\net6.0\C#_Seminar4.AssemblyInfoInputs.cache
+C:\Users\Max\Git Прошлые Уроки\C#_Seminar4\obj\Debug\net6.0\C#_Seminar4.AssemblyInfo.cs
+C:\Users\Max\Git Прошлые Уроки\C#_Seminar4\obj\Debug\net6.0\C#_Seminar4.csproj.CoreCompileInputs.cache
+C:\Users\Max\Git Прошлые Уроки\C#_Seminar4\obj\Debug\net6.0\C#_Seminar4.dll
+C:\Users\Max\Git Прошлые Уроки\C#_Seminar4\obj\Debug\net6.0\refint\C#_Seminar4.dll
+C:\Users\Max\Git Прошлые Уроки\C#_Seminar4\obj\Debug\net6.0\C#_Seminar4.pdb
+C:\Users\Max\Git Прошлые Уроки\C#_Seminar4\obj\Debug\net6.0\C#_Seminar4.genruntimeconfig.cache
+C:\Users\Max\Git Прошлые Уроки\C#_Seminar4\obj\Debug\net6.0\ref\C#_Seminar4.dll

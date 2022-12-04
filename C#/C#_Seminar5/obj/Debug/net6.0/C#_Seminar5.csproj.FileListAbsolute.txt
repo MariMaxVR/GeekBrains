@@ -1,0 +1,15 @@
+C:\Users\Max\Прошлые Уроки\C#_Seminar5\bin\Debug\net6.0\C#_Seminar5.exe
+C:\Users\Max\Прошлые Уроки\C#_Seminar5\bin\Debug\net6.0\C#_Seminar5.deps.json
+C:\Users\Max\Прошлые Уроки\C#_Seminar5\bin\Debug\net6.0\C#_Seminar5.runtimeconfig.json
+C:\Users\Max\Прошлые Уроки\C#_Seminar5\bin\Debug\net6.0\C#_Seminar5.dll
+C:\Users\Max\Прошлые Уроки\C#_Seminar5\bin\Debug\net6.0\C#_Seminar5.pdb
+C:\Users\Max\Прошлые Уроки\C#_Seminar5\obj\Debug\net6.0\C#_Seminar5.csproj.AssemblyReference.cache
+C:\Users\Max\Прошлые Уроки\C#_Seminar5\obj\Debug\net6.0\C#_Seminar5.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Max\Прошлые Уроки\C#_Seminar5\obj\Debug\net6.0\C#_Seminar5.AssemblyInfoInputs.cache
+C:\Users\Max\Прошлые Уроки\C#_Seminar5\obj\Debug\net6.0\C#_Seminar5.AssemblyInfo.cs
+C:\Users\Max\Прошлые Уроки\C#_Seminar5\obj\Debug\net6.0\C#_Seminar5.csproj.CoreCompileInputs.cache
+C:\Users\Max\Прошлые Уроки\C#_Seminar5\obj\Debug\net6.0\C#_Seminar5.dll
+C:\Users\Max\Прошлые Уроки\C#_Seminar5\obj\Debug\net6.0\refint\C#_Seminar5.dll
+C:\Users\Max\Прошлые Уроки\C#_Seminar5\obj\Debug\net6.0\C#_Seminar5.pdb
+C:\Users\Max\Прошлые Уроки\C#_Seminar5\obj\Debug\net6.0\C#_Seminar5.genruntimeconfig.cache
+C:\Users\Max\Прошлые Уроки\C#_Seminar5\obj\Debug\net6.0\ref\C#_Seminar5.dll

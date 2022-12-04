@@ -1,0 +1,15 @@
+C:\Users\Max\CSharp_Lesson1\Example2_HelloUser\bin\Debug\net6.0\Example2_HelloUser.exe
+C:\Users\Max\CSharp_Lesson1\Example2_HelloUser\bin\Debug\net6.0\Example2_HelloUser.deps.json
+C:\Users\Max\CSharp_Lesson1\Example2_HelloUser\bin\Debug\net6.0\Example2_HelloUser.runtimeconfig.json
+C:\Users\Max\CSharp_Lesson1\Example2_HelloUser\bin\Debug\net6.0\Example2_HelloUser.dll
+C:\Users\Max\CSharp_Lesson1\Example2_HelloUser\bin\Debug\net6.0\Example2_HelloUser.pdb
+C:\Users\Max\CSharp_Lesson1\Example2_HelloUser\obj\Debug\net6.0\Example2_HelloUser.csproj.AssemblyReference.cache
+C:\Users\Max\CSharp_Lesson1\Example2_HelloUser\obj\Debug\net6.0\Example2_HelloUser.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Max\CSharp_Lesson1\Example2_HelloUser\obj\Debug\net6.0\Example2_HelloUser.AssemblyInfoInputs.cache
+C:\Users\Max\CSharp_Lesson1\Example2_HelloUser\obj\Debug\net6.0\Example2_HelloUser.AssemblyInfo.cs
+C:\Users\Max\CSharp_Lesson1\Example2_HelloUser\obj\Debug\net6.0\Example2_HelloUser.csproj.CoreCompileInputs.cache
+C:\Users\Max\CSharp_Lesson1\Example2_HelloUser\obj\Debug\net6.0\Example2_HelloUser.dll
+C:\Users\Max\CSharp_Lesson1\Example2_HelloUser\obj\Debug\net6.0\refint\Example2_HelloUser.dll
+C:\Users\Max\CSharp_Lesson1\Example2_HelloUser\obj\Debug\net6.0\Example2_HelloUser.pdb
+C:\Users\Max\CSharp_Lesson1\Example2_HelloUser\obj\Debug\net6.0\Example2_HelloUser.genruntimeconfig.cache
+C:\Users\Max\CSharp_Lesson1\Example2_HelloUser\obj\Debug\net6.0\ref\Example2_HelloUser.dll

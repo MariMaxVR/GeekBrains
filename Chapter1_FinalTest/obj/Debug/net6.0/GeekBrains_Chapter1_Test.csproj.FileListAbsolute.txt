@@ -1,0 +1,15 @@
+C:\Users\Max\Desktop\GeekBrains\GeekBrains_Chapter1_Test\obj\Debug\net6.0\GeekBrains_Chapter1_Test.csproj.AssemblyReference.cache
+C:\Users\Max\Desktop\GeekBrains\GeekBrains_Chapter1_Test\obj\Debug\net6.0\GeekBrains_Chapter1_Test.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Max\Desktop\GeekBrains\GeekBrains_Chapter1_Test\obj\Debug\net6.0\GeekBrains_Chapter1_Test.AssemblyInfoInputs.cache
+C:\Users\Max\Desktop\GeekBrains\GeekBrains_Chapter1_Test\obj\Debug\net6.0\GeekBrains_Chapter1_Test.AssemblyInfo.cs
+C:\Users\Max\Desktop\GeekBrains\GeekBrains_Chapter1_Test\obj\Debug\net6.0\GeekBrains_Chapter1_Test.csproj.CoreCompileInputs.cache
+C:\Users\Max\Desktop\GeekBrains\GeekBrains_Chapter1_Test\bin\Debug\net6.0\GeekBrains_Chapter1_Test.exe
+C:\Users\Max\Desktop\GeekBrains\GeekBrains_Chapter1_Test\bin\Debug\net6.0\GeekBrains_Chapter1_Test.deps.json
+C:\Users\Max\Desktop\GeekBrains\GeekBrains_Chapter1_Test\bin\Debug\net6.0\GeekBrains_Chapter1_Test.runtimeconfig.json
+C:\Users\Max\Desktop\GeekBrains\GeekBrains_Chapter1_Test\bin\Debug\net6.0\GeekBrains_Chapter1_Test.dll
+C:\Users\Max\Desktop\GeekBrains\GeekBrains_Chapter1_Test\bin\Debug\net6.0\GeekBrains_Chapter1_Test.pdb
+C:\Users\Max\Desktop\GeekBrains\GeekBrains_Chapter1_Test\obj\Debug\net6.0\GeekBrains_Chapter1_Test.dll
+C:\Users\Max\Desktop\GeekBrains\GeekBrains_Chapter1_Test\obj\Debug\net6.0\refint\GeekBrains_Chapter1_Test.dll
+C:\Users\Max\Desktop\GeekBrains\GeekBrains_Chapter1_Test\obj\Debug\net6.0\GeekBrains_Chapter1_Test.pdb
+C:\Users\Max\Desktop\GeekBrains\GeekBrains_Chapter1_Test\obj\Debug\net6.0\GeekBrains_Chapter1_Test.genruntimeconfig.cache
+C:\Users\Max\Desktop\GeekBrains\GeekBrains_Chapter1_Test\obj\Debug\net6.0\ref\GeekBrains_Chapter1_Test.dll

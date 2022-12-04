@@ -1,0 +1,15 @@
+C:\Users\Max\CSharp_Lesson1\Example5_Condition_If_else\bin\Debug\net6.0\Example5_Condition_If_else.exe
+C:\Users\Max\CSharp_Lesson1\Example5_Condition_If_else\bin\Debug\net6.0\Example5_Condition_If_else.deps.json
+C:\Users\Max\CSharp_Lesson1\Example5_Condition_If_else\bin\Debug\net6.0\Example5_Condition_If_else.runtimeconfig.json
+C:\Users\Max\CSharp_Lesson1\Example5_Condition_If_else\bin\Debug\net6.0\Example5_Condition_If_else.dll
+C:\Users\Max\CSharp_Lesson1\Example5_Condition_If_else\bin\Debug\net6.0\Example5_Condition_If_else.pdb
+C:\Users\Max\CSharp_Lesson1\Example5_Condition_If_else\obj\Debug\net6.0\Example5_Condition_If_else.csproj.AssemblyReference.cache
+C:\Users\Max\CSharp_Lesson1\Example5_Condition_If_else\obj\Debug\net6.0\Example5_Condition_If_else.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Max\CSharp_Lesson1\Example5_Condition_If_else\obj\Debug\net6.0\Example5_Condition_If_else.AssemblyInfoInputs.cache
+C:\Users\Max\CSharp_Lesson1\Example5_Condition_If_else\obj\Debug\net6.0\Example5_Condition_If_else.AssemblyInfo.cs
+C:\Users\Max\CSharp_Lesson1\Example5_Condition_If_else\obj\Debug\net6.0\Example5_Condition_If_else.csproj.CoreCompileInputs.cache
+C:\Users\Max\CSharp_Lesson1\Example5_Condition_If_else\obj\Debug\net6.0\Example5_Condition_If_else.dll
+C:\Users\Max\CSharp_Lesson1\Example5_Condition_If_else\obj\Debug\net6.0\refint\Example5_Condition_If_else.dll
+C:\Users\Max\CSharp_Lesson1\Example5_Condition_If_else\obj\Debug\net6.0\Example5_Condition_If_else.pdb
+C:\Users\Max\CSharp_Lesson1\Example5_Condition_If_else\obj\Debug\net6.0\Example5_Condition_If_else.genruntimeconfig.cache
+C:\Users\Max\CSharp_Lesson1\Example5_Condition_If_else\obj\Debug\net6.0\ref\Example5_Condition_If_else.dll

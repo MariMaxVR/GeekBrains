@@ -1,0 +1,15 @@
+C:\Users\Max\CSharp_Lesson1\Example6_Base\bin\Debug\net6.0\Example6_Base.exe
+C:\Users\Max\CSharp_Lesson1\Example6_Base\bin\Debug\net6.0\Example6_Base.deps.json
+C:\Users\Max\CSharp_Lesson1\Example6_Base\bin\Debug\net6.0\Example6_Base.runtimeconfig.json
+C:\Users\Max\CSharp_Lesson1\Example6_Base\bin\Debug\net6.0\Example6_Base.dll
+C:\Users\Max\CSharp_Lesson1\Example6_Base\bin\Debug\net6.0\Example6_Base.pdb
+C:\Users\Max\CSharp_Lesson1\Example6_Base\obj\Debug\net6.0\Example6_Base.csproj.AssemblyReference.cache
+C:\Users\Max\CSharp_Lesson1\Example6_Base\obj\Debug\net6.0\Example6_Base.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Max\CSharp_Lesson1\Example6_Base\obj\Debug\net6.0\Example6_Base.AssemblyInfoInputs.cache
+C:\Users\Max\CSharp_Lesson1\Example6_Base\obj\Debug\net6.0\Example6_Base.AssemblyInfo.cs
+C:\Users\Max\CSharp_Lesson1\Example6_Base\obj\Debug\net6.0\Example6_Base.csproj.CoreCompileInputs.cache
+C:\Users\Max\CSharp_Lesson1\Example6_Base\obj\Debug\net6.0\Example6_Base.dll
+C:\Users\Max\CSharp_Lesson1\Example6_Base\obj\Debug\net6.0\refint\Example6_Base.dll
+C:\Users\Max\CSharp_Lesson1\Example6_Base\obj\Debug\net6.0\Example6_Base.pdb
+C:\Users\Max\CSharp_Lesson1\Example6_Base\obj\Debug\net6.0\Example6_Base.genruntimeconfig.cache
+C:\Users\Max\CSharp_Lesson1\Example6_Base\obj\Debug\net6.0\ref\Example6_Base.dll

@@ -1,0 +1,30 @@
+C:\Users\Max\Прошлые Уроки\C#_Seminar7\bin\Debug\net6.0\C#_Seminar7.exe
+C:\Users\Max\Прошлые Уроки\C#_Seminar7\bin\Debug\net6.0\C#_Seminar7.deps.json
+C:\Users\Max\Прошлые Уроки\C#_Seminar7\bin\Debug\net6.0\C#_Seminar7.runtimeconfig.json
+C:\Users\Max\Прошлые Уроки\C#_Seminar7\bin\Debug\net6.0\C#_Seminar7.dll
+C:\Users\Max\Прошлые Уроки\C#_Seminar7\bin\Debug\net6.0\C#_Seminar7.pdb
+C:\Users\Max\Прошлые Уроки\C#_Seminar7\obj\Debug\net6.0\C#_Seminar7.csproj.AssemblyReference.cache
+C:\Users\Max\Прошлые Уроки\C#_Seminar7\obj\Debug\net6.0\C#_Seminar7.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Max\Прошлые Уроки\C#_Seminar7\obj\Debug\net6.0\C#_Seminar7.AssemblyInfoInputs.cache
+C:\Users\Max\Прошлые Уроки\C#_Seminar7\obj\Debug\net6.0\C#_Seminar7.AssemblyInfo.cs
+C:\Users\Max\Прошлые Уроки\C#_Seminar7\obj\Debug\net6.0\C#_Seminar7.csproj.CoreCompileInputs.cache
+C:\Users\Max\Прошлые Уроки\C#_Seminar7\obj\Debug\net6.0\C#_Seminar7.dll
+C:\Users\Max\Прошлые Уроки\C#_Seminar7\obj\Debug\net6.0\refint\C#_Seminar7.dll
+C:\Users\Max\Прошлые Уроки\C#_Seminar7\obj\Debug\net6.0\C#_Seminar7.pdb
+C:\Users\Max\Прошлые Уроки\C#_Seminar7\obj\Debug\net6.0\C#_Seminar7.genruntimeconfig.cache
+C:\Users\Max\Прошлые Уроки\C#_Seminar7\obj\Debug\net6.0\ref\C#_Seminar7.dll
+C:\Users\Max.COMPANYALLERGEN\Desktop\888\CSharp_Seminar7\bin\Debug\net6.0\C#_Seminar7.exe
+C:\Users\Max.COMPANYALLERGEN\Desktop\888\CSharp_Seminar7\bin\Debug\net6.0\C#_Seminar7.deps.json
+C:\Users\Max.COMPANYALLERGEN\Desktop\888\CSharp_Seminar7\bin\Debug\net6.0\C#_Seminar7.runtimeconfig.json
+C:\Users\Max.COMPANYALLERGEN\Desktop\888\CSharp_Seminar7\bin\Debug\net6.0\C#_Seminar7.dll
+C:\Users\Max.COMPANYALLERGEN\Desktop\888\CSharp_Seminar7\bin\Debug\net6.0\C#_Seminar7.pdb
+C:\Users\Max.COMPANYALLERGEN\Desktop\888\CSharp_Seminar7\obj\Debug\net6.0\C#_Seminar7.csproj.AssemblyReference.cache
+C:\Users\Max.COMPANYALLERGEN\Desktop\888\CSharp_Seminar7\obj\Debug\net6.0\C#_Seminar7.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Max.COMPANYALLERGEN\Desktop\888\CSharp_Seminar7\obj\Debug\net6.0\C#_Seminar7.AssemblyInfoInputs.cache
+C:\Users\Max.COMPANYALLERGEN\Desktop\888\CSharp_Seminar7\obj\Debug\net6.0\C#_Seminar7.AssemblyInfo.cs
+C:\Users\Max.COMPANYALLERGEN\Desktop\888\CSharp_Seminar7\obj\Debug\net6.0\C#_Seminar7.csproj.CoreCompileInputs.cache
+C:\Users\Max.COMPANYALLERGEN\Desktop\888\CSharp_Seminar7\obj\Debug\net6.0\C#_Seminar7.dll
+C:\Users\Max.COMPANYALLERGEN\Desktop\888\CSharp_Seminar7\obj\Debug\net6.0\refint\C#_Seminar7.dll
+C:\Users\Max.COMPANYALLERGEN\Desktop\888\CSharp_Seminar7\obj\Debug\net6.0\C#_Seminar7.pdb
+C:\Users\Max.COMPANYALLERGEN\Desktop\888\CSharp_Seminar7\obj\Debug\net6.0\C#_Seminar7.genruntimeconfig.cache
+C:\Users\Max.COMPANYALLERGEN\Desktop\888\CSharp_Seminar7\obj\Debug\net6.0\ref\C#_Seminar7.dll

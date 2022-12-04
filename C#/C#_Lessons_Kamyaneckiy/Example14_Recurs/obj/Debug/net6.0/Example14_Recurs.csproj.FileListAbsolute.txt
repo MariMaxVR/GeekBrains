@@ -1,0 +1,15 @@
+C:\Users\Max\Прошлые Уроки\C#_Lessons_Kamyaneckiy\Example14_Recurs\obj\Debug\net6.0\Example14_Recurs.csproj.AssemblyReference.cache
+C:\Users\Max\Прошлые Уроки\C#_Lessons_Kamyaneckiy\Example14_Recurs\obj\Debug\net6.0\Example14_Recurs.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Max\Прошлые Уроки\C#_Lessons_Kamyaneckiy\Example14_Recurs\obj\Debug\net6.0\Example14_Recurs.AssemblyInfoInputs.cache
+C:\Users\Max\Прошлые Уроки\C#_Lessons_Kamyaneckiy\Example14_Recurs\obj\Debug\net6.0\Example14_Recurs.AssemblyInfo.cs
+C:\Users\Max\Прошлые Уроки\C#_Lessons_Kamyaneckiy\Example14_Recurs\obj\Debug\net6.0\Example14_Recurs.csproj.CoreCompileInputs.cache
+C:\Users\Max\Прошлые Уроки\C#_Lessons_Kamyaneckiy\Example14_Recurs\bin\Debug\net6.0\Example14_Recurs.exe
+C:\Users\Max\Прошлые Уроки\C#_Lessons_Kamyaneckiy\Example14_Recurs\bin\Debug\net6.0\Example14_Recurs.deps.json
+C:\Users\Max\Прошлые Уроки\C#_Lessons_Kamyaneckiy\Example14_Recurs\bin\Debug\net6.0\Example14_Recurs.runtimeconfig.json
+C:\Users\Max\Прошлые Уроки\C#_Lessons_Kamyaneckiy\Example14_Recurs\bin\Debug\net6.0\Example14_Recurs.dll
+C:\Users\Max\Прошлые Уроки\C#_Lessons_Kamyaneckiy\Example14_Recurs\bin\Debug\net6.0\Example14_Recurs.pdb
+C:\Users\Max\Прошлые Уроки\C#_Lessons_Kamyaneckiy\Example14_Recurs\obj\Debug\net6.0\Example14_Recurs.dll
+C:\Users\Max\Прошлые Уроки\C#_Lessons_Kamyaneckiy\Example14_Recurs\obj\Debug\net6.0\refint\Example14_Recurs.dll
+C:\Users\Max\Прошлые Уроки\C#_Lessons_Kamyaneckiy\Example14_Recurs\obj\Debug\net6.0\Example14_Recurs.pdb
+C:\Users\Max\Прошлые Уроки\C#_Lessons_Kamyaneckiy\Example14_Recurs\obj\Debug\net6.0\Example14_Recurs.genruntimeconfig.cache
+C:\Users\Max\Прошлые Уроки\C#_Lessons_Kamyaneckiy\Example14_Recurs\obj\Debug\net6.0\ref\Example14_Recurs.dll

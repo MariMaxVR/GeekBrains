@@ -1,0 +1,15 @@
+C:\Users\Max\CSharp_Lesson1\Example4_Div\bin\Debug\net6.0\Example4_Div.exe
+C:\Users\Max\CSharp_Lesson1\Example4_Div\bin\Debug\net6.0\Example4_Div.deps.json
+C:\Users\Max\CSharp_Lesson1\Example4_Div\bin\Debug\net6.0\Example4_Div.runtimeconfig.json
+C:\Users\Max\CSharp_Lesson1\Example4_Div\bin\Debug\net6.0\Example4_Div.dll
+C:\Users\Max\CSharp_Lesson1\Example4_Div\bin\Debug\net6.0\Example4_Div.pdb
+C:\Users\Max\CSharp_Lesson1\Example4_Div\obj\Debug\net6.0\Example4_Div.csproj.AssemblyReference.cache
+C:\Users\Max\CSharp_Lesson1\Example4_Div\obj\Debug\net6.0\Example4_Div.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Max\CSharp_Lesson1\Example4_Div\obj\Debug\net6.0\Example4_Div.AssemblyInfoInputs.cache
+C:\Users\Max\CSharp_Lesson1\Example4_Div\obj\Debug\net6.0\Example4_Div.AssemblyInfo.cs
+C:\Users\Max\CSharp_Lesson1\Example4_Div\obj\Debug\net6.0\Example4_Div.csproj.CoreCompileInputs.cache
+C:\Users\Max\CSharp_Lesson1\Example4_Div\obj\Debug\net6.0\Example4_Div.dll
+C:\Users\Max\CSharp_Lesson1\Example4_Div\obj\Debug\net6.0\refint\Example4_Div.dll
+C:\Users\Max\CSharp_Lesson1\Example4_Div\obj\Debug\net6.0\Example4_Div.pdb
+C:\Users\Max\CSharp_Lesson1\Example4_Div\obj\Debug\net6.0\Example4_Div.genruntimeconfig.cache
+C:\Users\Max\CSharp_Lesson1\Example4_Div\obj\Debug\net6.0\ref\Example4_Div.dll

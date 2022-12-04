@@ -1,0 +1,30 @@
+C:\Users\Max\Desktop\C#_Seminar6\bin\Debug\net6.0\C#_Seminar6.exe
+C:\Users\Max\Desktop\C#_Seminar6\bin\Debug\net6.0\C#_Seminar6.deps.json
+C:\Users\Max\Desktop\C#_Seminar6\bin\Debug\net6.0\C#_Seminar6.runtimeconfig.json
+C:\Users\Max\Desktop\C#_Seminar6\bin\Debug\net6.0\C#_Seminar6.dll
+C:\Users\Max\Desktop\C#_Seminar6\bin\Debug\net6.0\C#_Seminar6.pdb
+C:\Users\Max\Desktop\C#_Seminar6\obj\Debug\net6.0\C#_Seminar6.csproj.AssemblyReference.cache
+C:\Users\Max\Desktop\C#_Seminar6\obj\Debug\net6.0\C#_Seminar6.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Max\Desktop\C#_Seminar6\obj\Debug\net6.0\C#_Seminar6.AssemblyInfoInputs.cache
+C:\Users\Max\Desktop\C#_Seminar6\obj\Debug\net6.0\C#_Seminar6.AssemblyInfo.cs
+C:\Users\Max\Desktop\C#_Seminar6\obj\Debug\net6.0\C#_Seminar6.csproj.CoreCompileInputs.cache
+C:\Users\Max\Desktop\C#_Seminar6\obj\Debug\net6.0\C#_Seminar6.dll
+C:\Users\Max\Desktop\C#_Seminar6\obj\Debug\net6.0\refint\C#_Seminar6.dll
+C:\Users\Max\Desktop\C#_Seminar6\obj\Debug\net6.0\C#_Seminar6.pdb
+C:\Users\Max\Desktop\C#_Seminar6\obj\Debug\net6.0\C#_Seminar6.genruntimeconfig.cache
+C:\Users\Max\Desktop\C#_Seminar6\obj\Debug\net6.0\ref\C#_Seminar6.dll
+C:\Users\Max\Прошлые Уроки\C#_Seminar6\bin\Debug\net6.0\C#_Seminar6.exe
+C:\Users\Max\Прошлые Уроки\C#_Seminar6\bin\Debug\net6.0\C#_Seminar6.deps.json
+C:\Users\Max\Прошлые Уроки\C#_Seminar6\bin\Debug\net6.0\C#_Seminar6.runtimeconfig.json
+C:\Users\Max\Прошлые Уроки\C#_Seminar6\bin\Debug\net6.0\C#_Seminar6.dll
+C:\Users\Max\Прошлые Уроки\C#_Seminar6\bin\Debug\net6.0\C#_Seminar6.pdb
+C:\Users\Max\Прошлые Уроки\C#_Seminar6\obj\Debug\net6.0\C#_Seminar6.csproj.AssemblyReference.cache
+C:\Users\Max\Прошлые Уроки\C#_Seminar6\obj\Debug\net6.0\C#_Seminar6.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Max\Прошлые Уроки\C#_Seminar6\obj\Debug\net6.0\C#_Seminar6.AssemblyInfoInputs.cache
+C:\Users\Max\Прошлые Уроки\C#_Seminar6\obj\Debug\net6.0\C#_Seminar6.AssemblyInfo.cs
+C:\Users\Max\Прошлые Уроки\C#_Seminar6\obj\Debug\net6.0\C#_Seminar6.csproj.CoreCompileInputs.cache
+C:\Users\Max\Прошлые Уроки\C#_Seminar6\obj\Debug\net6.0\C#_Seminar6.dll
+C:\Users\Max\Прошлые Уроки\C#_Seminar6\obj\Debug\net6.0\refint\C#_Seminar6.dll
+C:\Users\Max\Прошлые Уроки\C#_Seminar6\obj\Debug\net6.0\C#_Seminar6.pdb
+C:\Users\Max\Прошлые Уроки\C#_Seminar6\obj\Debug\net6.0\C#_Seminar6.genruntimeconfig.cache
+C:\Users\Max\Прошлые Уроки\C#_Seminar6\obj\Debug\net6.0\ref\C#_Seminar6.dll

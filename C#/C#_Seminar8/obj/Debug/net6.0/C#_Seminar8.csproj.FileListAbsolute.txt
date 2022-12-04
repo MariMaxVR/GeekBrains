@@ -1,0 +1,45 @@
+C:\Users\Max\Прошлые Уроки\C#_Seminar8\obj\Debug\net6.0\C#_Seminar8.csproj.AssemblyReference.cache
+C:\Users\Max\Прошлые Уроки\C#_Seminar8\obj\Debug\net6.0\C#_Seminar8.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Max\Прошлые Уроки\C#_Seminar8\obj\Debug\net6.0\C#_Seminar8.AssemblyInfoInputs.cache
+C:\Users\Max\Прошлые Уроки\C#_Seminar8\obj\Debug\net6.0\C#_Seminar8.AssemblyInfo.cs
+C:\Users\Max\Прошлые Уроки\C#_Seminar8\obj\Debug\net6.0\C#_Seminar8.csproj.CoreCompileInputs.cache
+C:\Users\Max\Прошлые Уроки\C#_Seminar8\bin\Debug\net6.0\C#_Seminar8.exe
+C:\Users\Max\Прошлые Уроки\C#_Seminar8\bin\Debug\net6.0\C#_Seminar8.deps.json
+C:\Users\Max\Прошлые Уроки\C#_Seminar8\bin\Debug\net6.0\C#_Seminar8.runtimeconfig.json
+C:\Users\Max\Прошлые Уроки\C#_Seminar8\bin\Debug\net6.0\C#_Seminar8.dll
+C:\Users\Max\Прошлые Уроки\C#_Seminar8\bin\Debug\net6.0\C#_Seminar8.pdb
+C:\Users\Max\Прошлые Уроки\C#_Seminar8\obj\Debug\net6.0\C#_Seminar8.dll
+C:\Users\Max\Прошлые Уроки\C#_Seminar8\obj\Debug\net6.0\refint\C#_Seminar8.dll
+C:\Users\Max\Прошлые Уроки\C#_Seminar8\obj\Debug\net6.0\C#_Seminar8.pdb
+C:\Users\Max\Прошлые Уроки\C#_Seminar8\obj\Debug\net6.0\C#_Seminar8.genruntimeconfig.cache
+C:\Users\Max\Прошлые Уроки\C#_Seminar8\obj\Debug\net6.0\ref\C#_Seminar8.dll
+C:\Users\Max.COMPANYALLERGEN\C#\CSharp_Seminar8\bin\Debug\net6.0\C#_Seminar8.exe
+C:\Users\Max.COMPANYALLERGEN\C#\CSharp_Seminar8\bin\Debug\net6.0\C#_Seminar8.deps.json
+C:\Users\Max.COMPANYALLERGEN\C#\CSharp_Seminar8\bin\Debug\net6.0\C#_Seminar8.runtimeconfig.json
+C:\Users\Max.COMPANYALLERGEN\C#\CSharp_Seminar8\bin\Debug\net6.0\C#_Seminar8.dll
+C:\Users\Max.COMPANYALLERGEN\C#\CSharp_Seminar8\bin\Debug\net6.0\C#_Seminar8.pdb
+C:\Users\Max.COMPANYALLERGEN\C#\CSharp_Seminar8\obj\Debug\net6.0\C#_Seminar8.csproj.AssemblyReference.cache
+C:\Users\Max.COMPANYALLERGEN\C#\CSharp_Seminar8\obj\Debug\net6.0\C#_Seminar8.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Max.COMPANYALLERGEN\C#\CSharp_Seminar8\obj\Debug\net6.0\C#_Seminar8.AssemblyInfoInputs.cache
+C:\Users\Max.COMPANYALLERGEN\C#\CSharp_Seminar8\obj\Debug\net6.0\C#_Seminar8.AssemblyInfo.cs
+C:\Users\Max.COMPANYALLERGEN\C#\CSharp_Seminar8\obj\Debug\net6.0\C#_Seminar8.csproj.CoreCompileInputs.cache
+C:\Users\Max.COMPANYALLERGEN\C#\CSharp_Seminar8\obj\Debug\net6.0\C#_Seminar8.dll
+C:\Users\Max.COMPANYALLERGEN\C#\CSharp_Seminar8\obj\Debug\net6.0\refint\C#_Seminar8.dll
+C:\Users\Max.COMPANYALLERGEN\C#\CSharp_Seminar8\obj\Debug\net6.0\C#_Seminar8.pdb
+C:\Users\Max.COMPANYALLERGEN\C#\CSharp_Seminar8\obj\Debug\net6.0\C#_Seminar8.genruntimeconfig.cache
+C:\Users\Max.COMPANYALLERGEN\C#\CSharp_Seminar8\obj\Debug\net6.0\ref\C#_Seminar8.dll
+C:\Users\Max\Прошлые Уроки\C#_Seminar8\CSharp_Seminar8\bin\Debug\net6.0\C#_Seminar8.exe
+C:\Users\Max\Прошлые Уроки\C#_Seminar8\CSharp_Seminar8\bin\Debug\net6.0\C#_Seminar8.deps.json
+C:\Users\Max\Прошлые Уроки\C#_Seminar8\CSharp_Seminar8\bin\Debug\net6.0\C#_Seminar8.runtimeconfig.json
+C:\Users\Max\Прошлые Уроки\C#_Seminar8\CSharp_Seminar8\bin\Debug\net6.0\C#_Seminar8.dll
+C:\Users\Max\Прошлые Уроки\C#_Seminar8\CSharp_Seminar8\bin\Debug\net6.0\C#_Seminar8.pdb
+C:\Users\Max\Прошлые Уроки\C#_Seminar8\CSharp_Seminar8\obj\Debug\net6.0\C#_Seminar8.csproj.AssemblyReference.cache
+C:\Users\Max\Прошлые Уроки\C#_Seminar8\CSharp_Seminar8\obj\Debug\net6.0\C#_Seminar8.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Max\Прошлые Уроки\C#_Seminar8\CSharp_Seminar8\obj\Debug\net6.0\C#_Seminar8.AssemblyInfoInputs.cache
+C:\Users\Max\Прошлые Уроки\C#_Seminar8\CSharp_Seminar8\obj\Debug\net6.0\C#_Seminar8.AssemblyInfo.cs
+C:\Users\Max\Прошлые Уроки\C#_Seminar8\CSharp_Seminar8\obj\Debug\net6.0\C#_Seminar8.csproj.CoreCompileInputs.cache
+C:\Users\Max\Прошлые Уроки\C#_Seminar8\CSharp_Seminar8\obj\Debug\net6.0\C#_Seminar8.dll
+C:\Users\Max\Прошлые Уроки\C#_Seminar8\CSharp_Seminar8\obj\Debug\net6.0\refint\C#_Seminar8.dll
+C:\Users\Max\Прошлые Уроки\C#_Seminar8\CSharp_Seminar8\obj\Debug\net6.0\C#_Seminar8.pdb
+C:\Users\Max\Прошлые Уроки\C#_Seminar8\CSharp_Seminar8\obj\Debug\net6.0\C#_Seminar8.genruntimeconfig.cache
+C:\Users\Max\Прошлые Уроки\C#_Seminar8\CSharp_Seminar8\obj\Debug\net6.0\ref\C#_Seminar8.dll
