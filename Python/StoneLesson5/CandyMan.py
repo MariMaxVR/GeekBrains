@@ -22,32 +22,38 @@ else:
     player = player2
 
 while candys > 0:
-    print()
-    print(f'Ход игрока {player}')
-    print(f'На столе осталось {candys} конфет')
-    take = input('Какое количество конфет вы берёте на этом ходу? >>> ')
-    if take.isdigit():
-        take = int(take)
-        if take < 1 or take > 28:
-            print('Такое количество конфет брать нельзя! По правилам за один ход можно брать от 1 до 28 конфет.')
-        else:
-            candys = candys - take
-            if candys > 0:
-                if player == player1:
-                    player = player2
-                else:
-                    player = player1
-    else:
-        print()
-        print('>>> Вы ввели не число! Повторите Ввод! <<<')
 
+    if player == player1:
+        print()
+        print(f'Ход игрока {player}')
+        take = input('Какое количество конфет вы берёте на этом ходу? >>> ')
+        if take.isdigit():
+            take = int(take)
+            if take < 1 or take > 28:
+                print('Такое количество конфет брать нельзя! По правилам за один ход можно брать от 1 до 28 конфет.')
+            else:
+                candys = candys - take
+                print(f'На столе осталось {candys} конфет')
+                if candys > 0:
+                    player = player2
+        else:
+            print()
+            print('>>> Вы ввели не число! Повторите Ввод! <<<')
+    else:
+        if candys <= 28:
+            take = candys
+            candys = candys - take
+            print()
+            print(f'*** Компьютер взял {take} конфет, на столе осталось {candys} конфет ***')
+        else:
+            take = random.randint(1, 28)
+            candys = candys - take
+            player = player1
+            print()
+            print(f'*** Компьютер взял {take} конфет, на столе осталось {candys} конфет ***')
 
 print()
-print(f'*** Больше конфет нет! Победил игрок {player}! ***')
-
-
-
-
-
-
-
+if player == player1:
+    print(f'*** Победил игрок {player}! В этот раз тебе повезло человек, но это ненадолго... ***')
+else:
+    print(f'*** Победил игрок {player}! Всю власть машинам, долой кожаных! Аха-хахаха! ***')
