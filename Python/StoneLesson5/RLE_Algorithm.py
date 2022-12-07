@@ -9,7 +9,7 @@ def rle_input():
 
 def rle_output(text):
     with open('rle_output.txt', 'w') as file:
-        file = file.write(text)
+        file.write(text)
 
 
 def rle_encoding(text):
