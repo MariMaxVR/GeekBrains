@@ -17,13 +17,13 @@ def print_field(pl_fi):
     print('\t|     |     |     |')
     print(f"\t|  {pl_fi[6]}  |  {pl_fi[7]}  |  {pl_fi[8]}  |")
     print('\t|_____|_____|_____|')
-    print()
+
 
 
 def player_sign(player_sign):
-    valid = False
-    while not valid:
-        take = input("Куда поставим " + player_sign + "? >>> ")
+    flag = False
+    while not flag:
+        take = input("\t Куда поставим " + player_sign + "? >>> ")
         try:
             take = int(take)
         except:
@@ -32,7 +32,7 @@ def player_sign(player_sign):
         if take >= 1 and take <= 9:
             if (str(pl_fi[take - 1]) not in "XO"):
                 pl_fi[take - 1] = player_sign
-                valid = True
+                flag = True
             else:
                 print("Эта клетка уже занята!")
         else:
@@ -43,40 +43,34 @@ def check_result(pl_fi):
     win_results = ((0, 1, 2), (3, 4, 5), (6, 7, 8), (0, 3, 6), (1, 4, 7), (2, 5, 8), (0, 4, 8), (2, 4, 6))
     for i in win_results:
         if pl_fi[i[0]] == pl_fi[i[1]] == pl_fi[i[2]]:
-            return pl_fi[i[0]]
+            return True
     return False
 
-
+#######################################
 pl_fi = [i for i in range(1, 10)]
 
-
-player1 = 'Максим'
-player2 = 'Марианна'
+player1 = input('Введите имя первого игрока (X): ')
+player2 = input('Введите имя второго игрока (O): ')
 player = ''
 
-
 i = 0
-win = False
-while not win:
+while i < 10:
     print_field(pl_fi)
     if i % 2 == 0:
         player = player1
-        print(f'Ход игрока {player}')
+        print(f'\t Ход игрока {player}')
         player_sign("X")
     else:
         player = player2
-        print(f'Ход игрока {player}')
+        print(f'\t Ход игрока {player}')
         player_sign("O")
     i += 1
     if i > 4:
         temp = check_result(pl_fi)
         if temp:
             print_field(pl_fi)
-            print(f'Игрок {player} Выиграл!')
-            win = True
+            print(f'\t Игрок {player} Выиграл!')
             break
     if i == 9:
         print("Свободных клеток не осталось. Ничья!")
         break
-
-
