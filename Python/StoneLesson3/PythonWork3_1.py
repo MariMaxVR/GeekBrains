@@ -10,9 +10,9 @@ def count_sum(list):
 
 size = int(input('Из скольки случайных элементов будет состоять список? >>> '))
 
-user_list = []
-for i in range(size):
-    user_list.append(randint(1, 10))
+user_list = [(randint(1,10)) for i in range(size)]
+# for i in range(size):
+#     user_list.append(randint(1, 10))
 
 print(f'Получился список вида {user_list}')
 print(f'Сумма элементов списка с нечётными индексами равна {count_sum(user_list)}')

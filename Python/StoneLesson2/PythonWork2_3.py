@@ -3,9 +3,11 @@
 from random import randint as Magic
 
 size = int(input("Введите размер списка: "))
-orig_list = []
-for i in range(size):
-    orig_list.append(Magic(0, 100))
+
+orig_list = [(Magic(0,100)) for i in range(size)]
+# orig_list = []
+# for i in range(size):
+#     orig_list.append(Magic(0, 100))
 
 print(f'Получился список, состоящий из {size} элементов и имеющий вид:')
 print(orig_list)
