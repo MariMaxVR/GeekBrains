@@ -5,10 +5,12 @@
 new_list = input('Введите вещественные числа через пробел:\n').replace(',', '.')
 new_list = list(map(float, new_list.split(' ')))
 
-result_list = []
-for i in new_list:
-    if i % 1 != 0:
-        result_list.append(round(i % 1, 2))
+# result_list = []
+# for i in new_list:
+#     if i % 1 != 0:
+#         result_list.append(round(i % 1, 2))
+result_list = [round(i%1,2) for i in new_list if i % 1 !=0]
+
 
 
 print(f'Получился список из числел: {new_list}')

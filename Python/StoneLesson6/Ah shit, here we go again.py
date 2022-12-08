@@ -7,26 +7,32 @@
 my_list = [i for i in range(n)]
 
 # 1.1. Также к примеру переделал создание списка сразу с обработкой каждого элемента (PythonWork2_3):
-#from random import randint as Magic
+# from random import randint as Magic
 
 # orig_list = []
 # for i in range(size):
 #     orig_list.append(Magic(0, 100))
-orig_list = [(Magic(0,100)) for i in range(size)]
+orig_list = [(Magic(0, 100)) for i in range(size)]
 
 # 2. Применение обработки данных через функцию map для быстрого перевода строковых элементов списка в числовые,
 # а также выполнение автоматической замены символа ',' на точку '.' и построение более сложной
-# конструкции с функцией input (PythonWork3_3)
+# конструкции с функцией input (PythonWork3_3):
 
 # user_list = input('Введите вещественные числа через пробел:\n')
 new_list = input('Введите вещественные числа через пробел:\n').replace(',', '.')
 new_list = list(map(float, new_list.split(' ')))
 
+# 2.1 #Использовании list comprehension совместно с обработкой данных (PythonWork3_3):
+
+# result_list = []
+# for i in new_list:
+#     if i % 1 != 0:
+#         result_list.append(round(i % 1, 2))
+result_list = [round(i % 1, 2) for i in new_list if i % 1 != 0]
 
 # 3. Пример использования функции filter и lambda-функции:
 # К списку my_list применяется функция filter первым аргументом которой указывается безымянная функция lambda,
 # а вторым аргументом сам список, по которому и происходит фильтрация исходя из значений lambda функции (True/False)
 
 my_list = [1, 3, 4, 6, 10, 11, 15, 12, 14]
-new_list = list(filter(lambda x: (x%2 == 0) , my_list))
-
+new_list = list(filter(lambda x: (x % 2 == 0), my_list))

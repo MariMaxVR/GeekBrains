@@ -22,6 +22,4 @@ def numsum(list):
         sum += list[i]
     return sum
 
-
-
 print(f'Сумма элементов списка равна {numsum(my_list)}')
