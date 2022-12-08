@@ -20,6 +20,4 @@ yb = int(input("Введите Y = "))
 result = math.sqrt(((xb - xa) ** 2) + ((yb - ya) ** 2))
 
 print(round(result, 2))
-
-
 #print(round(result, 3)) Выводит значение без округления 2 цифры.

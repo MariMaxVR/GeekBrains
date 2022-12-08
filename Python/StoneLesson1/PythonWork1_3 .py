@@ -4,17 +4,18 @@
 # x=34; y=-30 -> 4
 # x=2; y=4 -> 1
 # x=-34; y=-30 -> 3
+message = lambda x: print(x + ' четверть')
 
 x = int(input('Введите значение координаты X: '))
 y = int(input("Введите значение координаты Y: "))
 
 if x > 0 and y > 0:
-    print("I четверть")
+    message('I')
 elif x < 0 and y > 0:
-    print("II четверть")
+    message('II')
 elif x < 0 and y < 0:
-    print("III четверть")
+    message('III')
 else:
-    print("IV четверть")
+    message('IV')
 
 

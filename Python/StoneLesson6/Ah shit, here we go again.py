@@ -6,7 +6,7 @@
 # my_list = [0] * n
 my_list = [i for i in range(n)]
 
-# 1.1. Также к примеру переделал создание списка сразу с обработкой каждого элемента (PythonWork2_3):
+# 1.1 Также к примеру переделал создание списка сразу с обработкой каждого элемента (PythonWork2_3):
 # from random import randint as Magic
 
 # orig_list = []
@@ -36,3 +36,8 @@ result_list = [round(i % 1, 2) for i in new_list if i % 1 != 0]
 
 my_list = [1, 3, 4, 6, 10, 11, 15, 12, 14]
 new_list = list(filter(lambda x: (x % 2 == 0), my_list))
+
+# 3.1 Также как пример использования lambda-функции создание универсального кода для вывода сообщения
+# (с передачей апгумента):
+
+message = lambda x: print(x + ' четверть')

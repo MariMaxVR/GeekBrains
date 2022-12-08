@@ -6,9 +6,9 @@ from random import randint
 
 size = int(input('Из скольки случайных элементов будет состоять список? >>> '))
 
-my_list = []
-for i in range(size):
-    my_list.append(randint(1, 10))
+my_list = [randint(1,10) for i in range(size)]
+# for i in range(size):
+#     my_list.append(randint(1, 10))
 
 new_list = []
 

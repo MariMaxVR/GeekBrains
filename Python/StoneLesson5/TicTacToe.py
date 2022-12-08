@@ -44,6 +44,7 @@ def check_result(pl_fi):
     for i in win_results:
         if pl_fi[i[0]] == pl_fi[i[1]] == pl_fi[i[2]]:
             return True
+
     return False
 
 #######################################
