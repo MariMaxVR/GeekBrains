@@ -12,7 +12,6 @@ new_list = list(map(float, new_list.split(' ')))
 result_list = [round(i%1,2) for i in new_list if i % 1 !=0]
 
 
-
 print(f'Получился список из числел: {new_list}')
 print(f'Разница между максимальным и минимальным значением (отличным от нуля) дробной части элементов списка равна: \n'
       f'{max(result_list) - min(result_list)}')
