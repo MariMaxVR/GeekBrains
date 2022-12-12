@@ -10,14 +10,13 @@ def print_field(pl_fi):
     print(f'\t _________________')
     print('\t|     |     |     |')
     print(f"\t|  {pl_fi[0]}  |  {pl_fi[1]}  |  {pl_fi[2]}  |")
-    print('\t|_____|_____|_____|')
+    print('\t|__1__|__2__|__3__|')
     print('\t|     |     |     |')
     print(f"\t|  {pl_fi[3]}  |  {pl_fi[4]}  |  {pl_fi[5]}  |")
-    print('\t|_____|_____|_____|')
+    print('\t|__4__|__5__|__6__|')
     print('\t|     |     |     |')
     print(f"\t|  {pl_fi[6]}  |  {pl_fi[7]}  |  {pl_fi[8]}  |")
-    print('\t|_____|_____|_____|')
-
+    print('\t|__7__|__8__|__9__|')
 
 
 def player_sign(player_sign):
@@ -42,12 +41,13 @@ def player_sign(player_sign):
 def check_result(pl_fi):
     win_results = ((0, 1, 2), (3, 4, 5), (6, 7, 8), (0, 3, 6), (1, 4, 7), (2, 5, 8), (0, 4, 8), (2, 4, 6))
     for i in win_results:
-        if pl_fi[i[0]] == pl_fi[i[1]] == pl_fi[i[2]]:
+        if pl_fi[i[0]] != ' ' and pl_fi[i[0]] == pl_fi[i[1]] == pl_fi[i[2]]:
             return True
     return False
 
+
 #######################################
-pl_fi = [i for i in range(1, 10)]
+pl_fi = [" " for i in range(1, 10)]
 
 player1 = input('Введите имя первого игрока (X): ')
 player2 = input('Введите имя второго игрока (O): ')
