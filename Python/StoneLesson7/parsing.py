@@ -8,13 +8,6 @@ def set_expression(text_expression):
 
 def get_result_expression():
     global expression
-    expression = expression.replace(',', '.')
-    expression = expression.replace('=', '')
-    expression = expression.replace(' ', '')
-    expression = expression.replace('*', ' * ')
-    expression = expression.replace('/', ' / ')
-    expression = expression.replace('-', ' - ')
-    expression = expression.replace('+', ' + ')
     result_expression = 0
     list = expression.split()
 

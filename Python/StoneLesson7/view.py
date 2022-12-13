@@ -6,6 +6,13 @@ def mode_initial():  # Функция для определения в како�
             number_string = float(number_string)
             return number_string
         except:
+            number_string = number_string.replace(',', '.')
+            number_string = number_string.replace('=', '')
+            number_string = number_string.replace(' ', '')
+            number_string = number_string.replace('*', ' * ')
+            number_string = number_string.replace('/', ' / ')
+            number_string = number_string.replace('-', ' - ')
+            number_string = number_string.replace('+', ' + ')
             return number_string
 
 
