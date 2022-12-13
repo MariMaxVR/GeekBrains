@@ -50,6 +50,7 @@ def solution_number():
     view.print_to_console(result_string)
     model.set_number(model.get_result())
 
+
 def start():
     input_start_number()
     if mode_initial(model.get_start_point()):
@@ -67,4 +68,3 @@ def start():
         view.print_to_console('Режим программы - строковый ввод.')
         parsing.set_expression(model.get_start_point())
         view.print_to_console(parsing.get_result_expression())
-

@@ -70,7 +70,6 @@ def get_mult():
     global result
     result = first_number * second_number
 
-
 def get_div():
     global first_number
     global second_number

@@ -4,9 +4,6 @@ expression = '1 + 3 * 6 / 2 + 3'
 result_expression = 0
 
 
-
-
-
 def set_expression(text_expression):
     global expression
     expression = text_expression
@@ -57,8 +54,7 @@ def get_result_expression():
 
             i += 1
 
-
-    #print(result_expression)
+    # print(result_expression)
     return result_expression
 
 
