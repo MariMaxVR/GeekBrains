@@ -1,9 +1,10 @@
-expression = '1 + 1 + 2'
+expression = ''
 
 
 def set_expression(text_expression):
     global expression
     expression = text_expression
+
 
 def get_result_expression():
     global expression
@@ -51,4 +52,4 @@ def get_result_expression():
             i += 1
 
     return result_expression
-print(get_result_expression())
+# print(get_result_expression())

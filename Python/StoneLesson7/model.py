@@ -4,6 +4,7 @@ operation = ''
 result = 0
 start_point = 0
 
+
 def get_start_point():
     global start_point
     return start_point
@@ -54,6 +55,8 @@ def get_sum():
     global second_number
     global result
     result = first_number + second_number
+    if result == int(result):
+        result = int(result)
 
 
 def get_dif():
@@ -61,6 +64,8 @@ def get_dif():
     global second_number
     global result
     result = first_number - second_number
+    if result == int(result):
+        result = int(result)
 
 
 def get_mult():
@@ -68,6 +73,8 @@ def get_mult():
     global second_number
     global result
     result = first_number * second_number
+    if result == int(result):
+        result = int(result)
 
 
 def get_div():
@@ -77,3 +84,5 @@ def get_div():
     result = first_number / second_number
     if result == int(result):
         result = int(result)
+    else:
+        result = round(result, 3)

@@ -1,16 +1,16 @@
 def mode_initial():
-    number = input('Введите целое число или числовое выражение: ')
+    number = input('Введите число или числовое выражение: ')
     try:
-        number = int(number)
+        number = float(number)
         return number
     except:
         return number
 
 def input_number():
     while True:
-        number = input('Введите целое число: ')
+        number = input('Введите число: ')
         try:
-            number = int(number)
+            number = float(number)
             return number
         except:
             print('Введено некорректное значение!')
@@ -26,7 +26,7 @@ def input_operation():
 
 
 def print_to_console(text):
-    print(text, end='')
+    print(text)
 
 
 def print_end():

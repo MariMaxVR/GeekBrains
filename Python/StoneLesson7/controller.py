@@ -65,10 +65,10 @@ def start():
             input_second_number()
             solution_number()
     else:
-        view.print_to_console('Режим программы - строковый ввод.\n')
+        view.print_to_console('Режим программы - строковый ввод.')
         parsing.set_expression(model.get_start_point())
         view.print_to_console(f'Результатом выражения {model.get_start_point()} '
-                              f'является число = {parsing.get_result_expression()}\n')
+                              f'является число = {parsing.get_result_expression()}')
 
         view.print_end()
 
