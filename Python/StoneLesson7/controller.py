@@ -10,9 +10,9 @@ def mode_initial(value):
         return False
 
 
-def input_first_number():
+def input_start_number():
     number = view.mode_initial()
-    model.set_start_number(number)
+    model.set_start_point(number)
 
 
 def input_number():
@@ -50,17 +50,11 @@ def solution_number():
     view.print_to_console(result_string)
     model.set_number(model.get_result())
 
-
-# def solution_expression():
-#     parsing.set_expression(model.first_number)
-#     print(parsing.expression)
-
-
 def start():
-    input_first_number()
-    if mode_initial(model.get_start_number()):
-        print('Режим программы - одиночный ввод значений.')
-        model.set_number(model.start_number)
+    input_start_number()
+    if mode_initial(model.get_start_point()):
+        print('Режим программы - одиночный ввод.')
+        model.set_number(model.start_point)
         while True:
             input_operation()
             if model.get_operation() == '=':
@@ -70,5 +64,7 @@ def start():
             input_second_number()
             solution_number()
     else:
-        print('Режим программы - строковый ввод одним значением.')
-        view.print_to_console(model.start_number)
+        view.print_to_console('Режим программы - строковый ввод.')
+        parsing.set_expression(model.get_start_point())
+        view.print_to_console(parsing.get_result_expression())
+

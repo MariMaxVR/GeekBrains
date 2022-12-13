@@ -2,17 +2,17 @@ first_number = 0
 second_number = 0
 operation = ''
 result = 0
-start_number = 0
+start_point = 0
 
 
-def get_start_number():
-    global start_number
-    return start_number
+def get_start_point():
+    global start_point
+    return start_point
 
 
-def set_start_number(value):
-    global start_number
-    start_number = value
+def set_start_point(value):
+    global start_point
+    start_point = value
 
 
 def get_number():

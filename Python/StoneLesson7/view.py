@@ -1,5 +1,5 @@
 def mode_initial():
-    number = input('Введите целое число или значение: ')
+    number = input('Введите целое число или числовое выражение: ')
     try:
         number = int(number)
         return number
