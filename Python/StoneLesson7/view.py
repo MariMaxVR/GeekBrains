@@ -2,16 +2,10 @@ def mode_initial():  # Функция для определения в како�
     while True:  # Возврат числа или отформатированной строки в программе для решения по ветвлению.
         number_string = input('Введите число или числовое выражение: ')
         try:
+            number_string = number_string.replace(',', '.')
             number_string = float(number_string)
             return number_string
         except:
-            number_string = number_string.replace(',', '.')
-            number_string = number_string.replace('=', '')
-            number_string = number_string.replace(' ', '')
-            number_string = number_string.replace('*', ' * ')
-            number_string = number_string.replace('/', ' / ')
-            number_string = number_string.replace('-', ' - ')
-            number_string = number_string.replace('+', ' + ')
             return number_string
 
 
@@ -29,7 +23,7 @@ def input_number():  # Функция для получения последую
 def input_operation():  # Функция определения знака математической операции
     while True:
         operation = input('Введите знак операции: ')
-        if operation in ['+', '-', '*', '/', '=', '']:
+        if operation in ['+', '-', '*', '/', '']:
             return operation
         else:
             print('Введено некорректное значение!')
