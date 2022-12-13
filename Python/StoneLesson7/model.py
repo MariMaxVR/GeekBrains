@@ -1,6 +1,5 @@
 first_number = 0
 second_number = 0
-expression = ''
 operation = ''
 result = 0
 

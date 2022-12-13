@@ -1,13 +1,11 @@
 def input_number():
-        number = input('Введите число или значение: ')
+    while True:
+        number = input('Введите целое число: ')
         try:
             number = int(number)
             return number
         except:
-            expression = number
-            return expression
-
-
+            print('Введено некорректное значение!')
 
 
 def input_operation():

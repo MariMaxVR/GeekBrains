@@ -1,5 +1,12 @@
 import view
 import model
+import parsing
+
+def mode_initial(value):
+    if type(value) == int or type(value) == float:
+        return True
+    else:
+        return False
 
 
 def input_first_number():
@@ -22,7 +29,7 @@ def input_operation():
     model.set_operation(operation)
 
 
-def solution():
+def solution_number():
     operation = model.get_operation()
     if operation == '+':
         model.get_sum()
@@ -37,10 +44,14 @@ def solution():
     view.print_to_console(result_string)
     model.set_first_number(model.get_result())
 
+# def solution_expression():
+#     parsing.set_expression(model.first_number)
+#     print(parsing.expression)
+
 
 def start():
     input_first_number()
-    if type(model.first_number) == int:
+    if mode_initial(model.get_first_number()):
         print('Режим программы - одиночный ввод значений.')
         while True:
             input_operation()
@@ -49,6 +60,7 @@ def start():
                 view.print_end()
                 break
             input_second_number()
-            solution()
+            solution_number()
     else:
         print('Режим программы - строковый ввод значений.')
+
