@@ -47,7 +47,10 @@ def set_operation(value):
 
 def get_result():
     global result
-    return result
+    if result == int(result):
+        return int(result)
+    else:
+        return round(result, 3)
 
 
 def get_sum():
