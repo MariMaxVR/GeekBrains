@@ -4,7 +4,6 @@ operation = ''
 result = 0
 start_point = 0
 
-
 def get_start_point():
     global start_point
     return start_point
@@ -69,6 +68,7 @@ def get_mult():
     global second_number
     global result
     result = first_number * second_number
+
 
 def get_div():
     global first_number

@@ -3,7 +3,6 @@ import view
 import model
 
 
-
 def mode_initial(value):
     if type(value) == int or type(value) == float:
         return True
@@ -72,3 +71,4 @@ def start():
                               f'является число = {parsing.get_result_expression()}\n')
 
         view.print_end()
+
