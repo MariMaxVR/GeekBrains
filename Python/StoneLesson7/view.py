@@ -6,6 +6,7 @@ def mode_initial():
     except:
         return number
 
+
 def input_number():
     while True:
         number = input('Введите целое число: ')
@@ -26,7 +27,7 @@ def input_operation():
 
 
 def print_to_console(text):
-    print(text)
+    print(text, end='')
 
 
 def print_end():

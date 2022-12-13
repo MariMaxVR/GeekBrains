@@ -1,6 +1,7 @@
+import parsing
 import view
 import model
-import parsing
+
 
 
 def mode_initial(value):
@@ -65,6 +66,9 @@ def start():
             input_second_number()
             solution_number()
     else:
-        view.print_to_console('Режим программы - строковый ввод.')
+        view.print_to_console('Режим программы - строковый ввод.\n')
         parsing.set_expression(model.get_start_point())
-        view.print_to_console(parsing.get_result_expression())
+        view.print_to_console(f'Результатом выражения {model.get_start_point()} '
+                              f'является число = {parsing.get_result_expression()}\n')
+
+        view.print_end()

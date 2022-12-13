@@ -1,7 +1,6 @@
-import controller
 
-expression = '1 + 3 * 6 / 2 + 3'
-result_expression = 0
+expression = ' '
+
 
 
 def set_expression(text_expression):
@@ -11,7 +10,7 @@ def set_expression(text_expression):
 
 def get_result_expression():
     global expression
-    global result_expression
+    result_expression = 0
     # print(expression)
     list = expression.split()
     # print(list)
@@ -54,8 +53,7 @@ def get_result_expression():
 
             i += 1
 
-    # print(result_expression)
     return result_expression
 
 
-print(get_result_expression())
+
