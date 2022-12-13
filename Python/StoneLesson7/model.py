@@ -1,5 +1,6 @@
 first_number = 0
 second_number = 0
+expression = ''
 operation = ''
 result = 0
 
@@ -7,23 +8,32 @@ result = 0
 def get_first_number():
     global first_number
     return first_number
+
+
 def set_first_number(value):
     global first_number
     first_number = value
 
+
 def get_second_number():
     global second_number
     return second_number
+
+
 def set_second_number(value):
     global second_number
     second_number = value
 
+
 def get_operation():
     global operation
     return operation
+
+
 def set_operation(value):
     global operation
     operation = value
+
 
 def get_result():
     global result
