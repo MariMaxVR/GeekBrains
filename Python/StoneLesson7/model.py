@@ -2,14 +2,25 @@ first_number = 0
 second_number = 0
 operation = ''
 result = 0
+start_number = 0
 
 
-def get_first_number():
+def get_start_number():
+    global start_number
+    return start_number
+
+
+def set_start_number(value):
+    global start_number
+    start_number = value
+
+
+def get_number():
     global first_number
     return first_number
 
 
-def set_first_number(value):
+def set_number(value):
     global first_number
     first_number = value
 

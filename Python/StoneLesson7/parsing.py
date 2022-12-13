@@ -2,6 +2,7 @@ import controller
 
 expression = ''
 
+
 def get_expression():
     global expression
     return expression

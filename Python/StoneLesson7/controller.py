@@ -2,6 +2,7 @@ import view
 import model
 import parsing
 
+
 def mode_initial(value):
     if type(value) == int or type(value) == float:
         return True
@@ -10,8 +11,13 @@ def mode_initial(value):
 
 
 def input_first_number():
+    number = view.mode_initial()
+    model.set_start_number(number)
+
+
+def input_number():
     number = view.input_number()
-    model.set_first_number(number)
+    model.set_number(number)
 
 
 def input_second_number():
@@ -40,9 +46,10 @@ def solution_number():
     elif operation == '/':
         model.get_div()
 
-    result_string = (f'{model.get_first_number()} {operation} {model.get_second_number()} = {model.get_result()}')
+    result_string = (f'{model.get_number()} {operation} {model.get_second_number()} = {model.get_result()}')
     view.print_to_console(result_string)
-    model.set_first_number(model.get_result())
+    model.set_number(model.get_result())
+
 
 # def solution_expression():
 #     parsing.set_expression(model.first_number)
@@ -51,8 +58,9 @@ def solution_number():
 
 def start():
     input_first_number()
-    if mode_initial(model.get_first_number()):
+    if mode_initial(model.get_start_number()):
         print('Режим программы - одиночный ввод значений.')
+        model.set_number(model.start_number)
         while True:
             input_operation()
             if model.get_operation() == '=':
@@ -62,5 +70,5 @@ def start():
             input_second_number()
             solution_number()
     else:
-        print('Режим программы - строковый ввод значений.')
-
+        print('Режим программы - строковый ввод одним значением.')
+        view.print_to_console(model.start_number)
