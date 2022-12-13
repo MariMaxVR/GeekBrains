@@ -5,12 +5,12 @@ result = 0
 start_point = 0
 
 
-def get_start_point():
+def get_start_point():  # Получение первоначального значения по которому определяется режим программы
     global start_point
     return start_point
 
 
-def set_start_point(value):
+def set_start_point(value):  # Установка первоначального значения.
     global start_point
     start_point = value
 

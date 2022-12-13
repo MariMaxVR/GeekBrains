@@ -70,5 +70,4 @@ def start():
         parsing.set_expression(model.get_start_point())
         view.print_to_console(f'Результатом выражения {model.get_start_point()} '
                               f'является число = {parsing.get_result_expression()}')
-
         view.print_end()

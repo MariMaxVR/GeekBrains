@@ -53,4 +53,3 @@ def get_result_expression():
         return int(result_expression)
     else:
         return round(result_expression, 3)
-
