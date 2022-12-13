@@ -9,14 +9,13 @@ def set_expression(text_expression):
 def get_result_expression():
     global expression
     result_expression = 0
-    print(expression)
     list = expression.split()
-    print(list)
-    for i in range(len(list)):
-        if list[i].isdigit():
-            list[i] = int(list[i])
-    print(list)
 
+    for i in range(len(list)):
+        try:
+            list[i] = float(list[i])
+        except:
+            list[i] = list[i]
     while len(list) != 1:
         i = 0
         while ('*' in list or '/' in list) and i < len(list):
@@ -50,6 +49,8 @@ def get_result_expression():
                 i -= 1
 
             i += 1
+    if result_expression == int(result_expression):
+        return int(result_expression)
+    else:
+        return round(result_expression, 3)
 
-    return result_expression
-# print(get_result_expression())

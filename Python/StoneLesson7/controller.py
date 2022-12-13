@@ -52,13 +52,14 @@ def solution_number():
 
 
 def start():
+    view.print_start()
     input_start_number()
     if mode_initial(model.get_start_point()):
         print('Режим программы - одиночный ввод.')
         model.set_number(model.start_point)
         while True:
             input_operation()
-            if model.get_operation() == '=':
+            if model.get_operation() == '':
                 view.print_to_console(f'Итоговый результат = {model.get_result()}')
                 view.print_end()
                 break
@@ -71,4 +72,3 @@ def start():
                               f'является число = {parsing.get_result_expression()}')
 
         view.print_end()
-
