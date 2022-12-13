@@ -33,7 +33,7 @@ def get_result_expression():
                 i -= 1
 
             i += 1
-
+        i = 0
         while ('+' in list or '-' in list) and i < len(list):
             if list[i] == '+':
                 result_expression = list[i - 1] + list[i + 1]
