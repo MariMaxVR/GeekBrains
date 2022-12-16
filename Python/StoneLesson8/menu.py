@@ -8,18 +8,22 @@ def main_menu(choice: int):
         case 1:
             DB.load_phone_book()
             VIEW.load_successful()
+
         case 2:
             phone_book = PB.get_phone_book()
             VIEW.print_phone_book(phone_book)
+
         case 3:
             try:
                 DB.save_phone_book()
                 VIEW.save_successful()
             except:
                 VIEW.save_error()
+
         case 4:
             contact = VIEW.new_contact()
             PB.add_contact(contact)
+
         case 5:
             phone_book = PB.get_phone_book()
             VIEW.print_phone_book(phone_book)
@@ -31,6 +35,7 @@ def main_menu(choice: int):
                     VIEW.change_successful()
             except:
                 VIEW.change_error()
+
         case 6:
             phone_book = PB.get_phone_book()
             VIEW.print_phone_book(phone_book)
@@ -40,8 +45,9 @@ def main_menu(choice: int):
                 VIEW.remove_successful()
             except:
                 VIEW.remove_error()
+
         case 7:
-            phone_book = PB.get_phone_book()
+            pass
 
         case 0:
             VIEW.exit()
