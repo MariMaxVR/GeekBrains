@@ -32,10 +32,6 @@ def main_menu(choice: int):
             return True
 
 
-
-
-
-
 def start():
     while True:
         choice = view.show_menu()
