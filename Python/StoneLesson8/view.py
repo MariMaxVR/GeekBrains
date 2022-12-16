@@ -56,6 +56,8 @@ def save_successful():
 def remove_successful():
     print('Удаление контакта выполнено успешно.')
 
+def remove_error():
+    print('Удаление контакта не выполнено! Проверьте корректность введения ID.')
 
 def new_contact():
     name = input('Введите ФИО контакта: ')
@@ -66,7 +68,7 @@ def new_contact():
 
 def remove_choice():
     try:
-        id = int(input('Введите ID номер контакта для удаления: '))
+        id = int(input('\nВведите ID номер контакта для удаления: '))
         return id
     except:
-        print('Введены некорректные данные! Укажите ID контакта.')
+        print('\nВведены некорректные данные! Укажите ID контакта.')
