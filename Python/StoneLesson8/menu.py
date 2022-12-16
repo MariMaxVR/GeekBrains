@@ -21,7 +21,7 @@ def main_menu(choice: int):
             pass
         case 6:
             phone_book = PB.get_phone_book()
-            view.print_phone_book()
+            view.print_phone_book(phone_book)
             id = view.remove_choice()
             if PB.remove_contact(id):
                 view.remove_successful()
