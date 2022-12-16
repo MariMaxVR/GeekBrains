@@ -1,10 +1,10 @@
-import phone_book
+import phone_book as PB
 
 
 def load_phone_book():
     with open('phone_book.txt', 'r', encoding='UTF-8') as file:
         phone_book = file.readlines()
-    phone_book.set_phone_book(str_to_list(phone_book))
+    PB.set_phone_book(str_to_list(phone_book))
 
 
 def str_to_list(phone_book: list):
@@ -20,7 +20,7 @@ def save_phone_book():
 
 
 def list_to_str():
-    phone_book_list = phone_book.get_phone_book()
+    phone_book_list = PB.get_phone_book()
     new_phone_book = []
     for i in phone_book_list:
         new_phone_book.append(';'.join(i) + '\n')

@@ -6,11 +6,11 @@ import data_base as DB
 def main_menu(choice: int):
     match choice:
         case 1:
-            phone_book = PB.get_phone_book()
-            view.print_phone_book(phone_book)
-        case 2:
             DB.load_phone_book()
             view.load_successful()
+        case 2:
+            phone_book = PB.get_phone_book()
+            view.print_phone_book(phone_book)
         case 3:
             DB.save_phone_book()
             view.save_successful()

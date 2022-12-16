@@ -18,8 +18,5 @@ def add_contact(contact: list):
 
 def remove_contact(id):
     global phone_book
-    if id in phone_book:
-        phone_book.pop(id - 1)
-        return True
-    else:
-        return False
+    phone_book.pop(id-1)
+
