@@ -22,9 +22,10 @@ def main_menu(choice: int):
             view.print_phone_book(phone_book)
             id = view.change_choice()
             try:
-                contact = view.new_contact()
-                PB.change_contact(id, contact)
-                view.change_successful()
+                if PB.remove_contact(id):
+                    contact = view.new_contact()
+                    PB.change_contact(id, contact)
+                    view.change_successful()
             except:
                 view.change_error()
         case 6:
