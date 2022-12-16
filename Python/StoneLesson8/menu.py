@@ -47,7 +47,11 @@ def main_menu(choice: int):
                 VIEW.remove_error()
 
         case 7:
-            pass
+            phone_book = PB.get_phone_book()
+            VIEW.print_phone_book(phone_book)
+            text = VIEW.find_input()
+            find_list = DB.find_contact(phone_book, text)
+            VIEW.print_phone_book(find_list)
 
         case 0:
             VIEW.exit()

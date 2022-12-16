@@ -35,6 +35,7 @@ def user_choice():
 
 def print_phone_book(phone_book: list):
     if len(phone_book) > 0:
+        print('Телефонная книга на данный момент имеет вид: ')
         for id, contact in enumerate(phone_book, 1):
             print(id, *contact)
     else:
@@ -82,6 +83,13 @@ def new_contact():
     phone_number = input('Введите номер контакте: ')
     comment = input('Введите комментарий для контакта: ')
     return [name, phone_number, comment]
+
+
+def find_input():
+    text = input('\nПо какому параметру выполнить поиск контактов?\n'
+                 'Введите полностью или частично ФИО / номер / комментарий:\n'
+                 '>>> ')
+    return text
 
 
 def remove_choice():

@@ -26,3 +26,16 @@ def list_to_str():
         new_phone_book.append(' * '.join(i) + '\n')
     new_phone_book[-1] = new_phone_book[-1][:-1]
     return ''.join(new_phone_book)
+
+
+def find_contact(phone_book, text):
+    find_list = []
+    if len(phone_book) > 0:
+        for i in range(len(phone_book)):
+            for j in range(len(phone_book[i])):
+                if text in phone_book[i][j]:
+                    find_list.append(phone_book[i])
+                    break
+        return find_list
+    else:
+        print('Телефонная книга пуста или не загружена. Попробуйте загрузить телефонную книгу.')
