@@ -46,13 +46,15 @@ def main_menu(choice: int):
             except:
                 VIEW.remove_error()
 
-
         case 7:
-            phone_book = PB.get_phone_book()
-            VIEW.print_phone_book(phone_book)
-            text = VIEW.find_input()
-            find_list = DB.find_contact(phone_book, text)
-            VIEW.print_phone_book(find_list)
+            try:
+                phone_book = PB.get_phone_book()
+                VIEW.print_phone_book(phone_book)
+                text = VIEW.find_input()
+                find_list = DB.find_contact(phone_book, text)
+                VIEW.print_find_contact(find_list)
+            except:
+                VIEW.find_error()
 
         case 0:
             VIEW.exit()

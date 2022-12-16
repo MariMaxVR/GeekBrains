@@ -9,8 +9,8 @@ def load_phone_book():
 
 def str_to_list(phone_book: list):
     new_phone_book = []
-    for i in phone_book:
-        new_phone_book.append(i.strip().split(' * '))
+    for _ in phone_book:
+        new_phone_book.append(_.strip().split(' * '))
     return new_phone_book
 
 
@@ -28,6 +28,7 @@ def list_to_str():
     return ''.join(new_phone_book)
 
 
+
 def find_contact(phone_book, text):
     find_list = []
     if len(phone_book) > 0:
@@ -37,5 +38,4 @@ def find_contact(phone_book, text):
                     find_list.append(phone_book[i])
                     break
         return find_list
-    else:
-        print('Телефонная книга пуста или не загружена. Попробуйте загрузить телефонную книгу.')
+

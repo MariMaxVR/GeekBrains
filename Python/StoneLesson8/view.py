@@ -42,6 +42,14 @@ def print_phone_book(phone_book: list):
         print('\nТелефонная книга пуста или не загружена. Попробуйте загрузить телефонную книгу.')
 
 
+def print_find_contact(phone_book: list):
+    if len(phone_book) > 0:
+        print('\nТелефонная книга на данный момент имеет вид: ')
+        for id, contact in enumerate(phone_book, 1):
+            print(id, *contact)
+    else:
+        print('\nПо указанным параметрам ни один контакт не найден. Уточните параметры поиска.')
+
 def exit():
     print('\nРабота программы завершена. До свидания.')
 
