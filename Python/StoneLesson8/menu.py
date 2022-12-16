@@ -18,7 +18,15 @@ def main_menu(choice: int):
             contact = view.new_contact()
             PB.add_contact((contact))
         case 5:
-            pass
+            phone_book = PB.get_phone_book()
+            view.print_phone_book(phone_book)
+            id = view.change_choice()
+            try:
+                contact = view.new_contact()
+                PB.change_contact(id, contact)
+                view.change_successful()
+            except:
+                view.change_error()
         case 6:
             phone_book = PB.get_phone_book()
             view.print_phone_book(phone_book)

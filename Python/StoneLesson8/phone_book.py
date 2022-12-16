@@ -18,8 +18,11 @@ def add_contact(contact: list):
 
 def remove_contact(id):
     global phone_book
-    if phone_book.pop(id-1):
-        return True
-    else:
-        return False
+    phone_book.pop(id - 1)
+
+
+def change_contact(id, contact):
+    global phone_book
+    phone_book.insert(id - 1, contact)
+    phone_book.pop(id)
 
