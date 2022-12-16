@@ -12,8 +12,11 @@ def main_menu(choice: int):
             phone_book = PB.get_phone_book()
             view.print_phone_book(phone_book)
         case 3:
-            DB.save_phone_book()
-            view.save_successful()
+            try:
+                DB.save_phone_book()
+                view.save_successful()
+            except:
+                view.save_error()
         case 4:
             contact = view.new_contact()
             PB.add_contact((contact))
