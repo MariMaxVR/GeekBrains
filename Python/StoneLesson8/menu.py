@@ -1,4 +1,4 @@
-import view
+import view as VIEW
 import phone_book as PB
 import data_base as DB
 
@@ -7,48 +7,49 @@ def main_menu(choice: int):
     match choice:
         case 1:
             DB.load_phone_book()
-            view.load_successful()
+            VIEW.load_successful()
         case 2:
             phone_book = PB.get_phone_book()
-            view.print_phone_book(phone_book)
+            VIEW.print_phone_book(phone_book)
         case 3:
             try:
                 DB.save_phone_book()
-                view.save_successful()
+                VIEW.save_successful()
             except:
-                view.save_error()
+                VIEW.save_error()
         case 4:
-            contact = view.new_contact()
-            PB.add_contact((contact))
+            contact = VIEW.new_contact()
+            PB.add_contact(contact)
         case 5:
             phone_book = PB.get_phone_book()
-            view.print_phone_book(phone_book)
-            id = view.change_choice()
+            VIEW.print_phone_book(phone_book)
+            id = VIEW.change_choice()
             try:
                 if PB.remove_contact(id):
-                    contact = view.new_contact()
+                    contact = VIEW.new_contact()
                     PB.change_contact(id, contact)
-                    view.change_successful()
+                    VIEW.change_successful()
             except:
-                view.change_error()
+                VIEW.change_error()
         case 6:
             phone_book = PB.get_phone_book()
-            view.print_phone_book(phone_book)
-            id = view.remove_choice()
+            VIEW.print_phone_book(phone_book)
+            id = VIEW.remove_choice()
             try:
                 PB.remove_contact(id)
-                view.remove_successful()
+                VIEW.remove_successful()
             except:
-                view.remove_error()
+                VIEW.remove_error()
         case 7:
-            pass
+            phone_book = PB.get_phone_book()
+
         case 0:
-            view.exit()
+            VIEW.exit()
             return True
 
 
 def start():
     while True:
-        choice = view.show_menu()
+        choice = VIEW.show_menu()
         if main_menu(choice):
             break
