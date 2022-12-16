@@ -46,6 +46,7 @@ def main_menu(choice: int):
             except:
                 VIEW.remove_error()
 
+
         case 7:
             phone_book = PB.get_phone_book()
             VIEW.print_phone_book(phone_book)

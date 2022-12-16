@@ -35,11 +35,11 @@ def user_choice():
 
 def print_phone_book(phone_book: list):
     if len(phone_book) > 0:
-        print('Телефонная книга на данный момент имеет вид: ')
+        print('\nТелефонная книга на данный момент имеет вид: ')
         for id, contact in enumerate(phone_book, 1):
             print(id, *contact)
     else:
-        print('Телефонная книга пуста или не загружена. Попробуйте загрузить телефонную книгу.')
+        print('\nТелефонная книга пуста или не загружена. Попробуйте загрузить телефонную книгу.')
 
 
 def exit():
@@ -79,10 +79,12 @@ def change_error():
 
 
 def new_contact():
-    name = input('Введите ФИО контакта: ')
-    phone_number = input('Введите номер контакте: ')
-    comment = input('Введите комментарий для контакта: ')
-    return [name, phone_number, comment]
+    surname = (input('Введите Фамилию контакта: ')).capitalize()
+    name = (input('Введите Имя контакта: ')).capitalize()
+    patronymic = (input('Введите Отчество контакта: ')).capitalize()
+    phone_number = input('Введите номер контакте: ').replace('8', '+7', 1)
+    comment = input('Введите комментарий для контакта: ').capitalize()
+    return [surname, name, patronymic, phone_number, comment]
 
 
 def find_input():
@@ -98,6 +100,7 @@ def remove_choice():
         return id
     except:
         print('\nВведены некорректные данные! Укажите ID контакта.')
+        return 0
 
 
 def change_choice():
