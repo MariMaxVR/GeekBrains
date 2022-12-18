@@ -59,7 +59,7 @@ def main_menu(choice: int):
             VIEW.exit()
             return True
 
-
+ 
 def start():
     while True:
         choice = VIEW.show_menu()
