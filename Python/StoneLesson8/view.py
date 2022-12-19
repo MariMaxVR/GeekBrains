@@ -109,7 +109,6 @@ def remove_choice():
         return id
     except:
         print('\nВведены некорректные данные! Укажите ID контакта.')
-        return 0
 
 
 def change_choice():
