@@ -2,6 +2,7 @@ import view as VIEW
 import phone_book as PB
 import data_base as DB
 
+
 def main_menu(choice: int):
     match choice:
         case 1:
@@ -59,9 +60,10 @@ def main_menu(choice: int):
             VIEW.exit()
             return True
 
- 
+
 def start():
     while True:
         choice = VIEW.show_menu()
         if main_menu(choice):
             break
+

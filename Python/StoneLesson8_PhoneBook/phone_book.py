@@ -25,3 +25,4 @@ def remove_contact(id):
 def change_contact(id, contact):
     global phone_book
     phone_book.insert(id - 1, contact)
+

@@ -117,3 +117,4 @@ def change_choice():
         return id
     except:
         print('\nВведены некорректные данные! Укажите ID контакта.')
+
