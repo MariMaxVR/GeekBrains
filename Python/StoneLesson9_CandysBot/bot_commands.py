@@ -1,9 +1,7 @@
 import random
 from aiogram import types
-import model, view
-
-# from bot import dp, bot
-
+import model
+import view
 
 
 async def start_game(message: types.Message):
@@ -18,7 +16,7 @@ async def start_game(message: types.Message):
         await bot_turn(message)
 
 
-async def bot_turn(message: types.Message): ###!!!
+async def bot_turn(message: types.Message):
     take = await model.bot_take()
     await model.take_candys(take)
     player_name = await model.get_player_name()
@@ -30,7 +28,7 @@ async def bot_turn(message: types.Message): ###!!!
         await model.set_game()
 
 
-async def player_turn(message: types.Message): ###!!!
+async def player_turn(message: types.Message):
     game = await model.get_game_status()
     if game:
         take = message.text
@@ -40,16 +38,15 @@ async def player_turn(message: types.Message): ###!!!
                 await model.take_candys(take)
             else:
                 await view.wrong_take(message)
-                await player_turn() #message = text ?##################
+                await player_turn()
         else:
             await view.wrong_number(message)
-            await player_turn() #message = text ?##################
-
+            await player_turn()
         player_name = await model.get_player_name()
         total_candys = await model.get_total_candys()
         if await model.get_total_candys() > 0:
             await view.print_info(message, player_name, take, total_candys, 'Компьютер')
-            # await bot_turn(message)
+            await bot_turn(message)
         if await model.get_total_candys() <= 0:
             await view.print_winner(message, player_name)
             await model.set_game()

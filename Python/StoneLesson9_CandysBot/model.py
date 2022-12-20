@@ -15,7 +15,6 @@ async def set_game():
         game = False
         player_name = ''
         total_candys = 150
-        
 
 
 async def set_player_name(name):
