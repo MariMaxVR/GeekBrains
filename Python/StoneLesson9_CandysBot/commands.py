@@ -10,7 +10,7 @@ async def start_game(message: types.Message):
     await view.start_game(message)
     player_name = message.from_user.first_name
     await model.set_player_name(player_name)
-    game_start = random.randint(1, 1)
+    game_start = random.randint(0, 1)
     if game_start:
         await view.player_take(message)
     else:
@@ -39,12 +39,9 @@ async def player_turn(message: types.Message):
             if (take <= 28) and (take > 0):
                 await model.set_total_count(take)
             else:
-
                 await view.wrong_take(message)
                 await player_turn()
-
         else:
-
             await view.wrong_number(message)
             await player_turn()
 
