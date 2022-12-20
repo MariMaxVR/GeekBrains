@@ -15,12 +15,12 @@ async def player_take(message):
     await bot.send_message(message.from_user.id, f'Какое количество конфет вы берёте?')
 
 
-async def table_info(message, name_player1, take, total_count, name_player2):
-    await bot.send_message(message.from_user.id, f'{name_player1} взял {take} конфет со стола.\n'
-                           f'На столе осталось {total_count} конфет. Ход игрока {name_player2}.')
+async def print_info(message, from_player, take, total_count, to_player):
+    await bot.send_message(message.from_user.id, f'{from_player} взял {take} конфет со стола.\n'
+                           f'На столе осталось {total_count} конфет. Ход игрока {to_player}.')
 
 
-async def win(message, name, take):
+async def print_winner(message, name):
     await bot.send_message(message.from_user.id, f'{name} забрал последние конфеты со стола,'
                            f'на столе ничего не осталось. Игрок {name} победил!\n'
                            f'Чтобы запустить игру заново запустите команду /start')

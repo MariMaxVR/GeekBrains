@@ -1,7 +1,7 @@
 from aiogram import Dispatcher
-import commands
+import bot_commands
 
 
 def registred_handlers(dp: Dispatcher):
-    dp.register_message_handler(commands.start_game, commands=['start'])
-    dp.register_message_handler(commands.player_turn)
+    dp.register_message_handler(bot_commands.start_game, commands=['start'])
+    dp.register_message_handler(bot_commands.player_turn)
