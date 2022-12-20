@@ -2,52 +2,51 @@ import random
 
 player_name = ''
 game = False
-candys = 150
+total_count = 150
 
 
-async def game_status():
+async def set_game():
     global game
     global player_name
-    global candys
+    global total_count
     if game == False:
         game = True
     else:
         player_name = ''
-        candys = 150
+        total_count = 150
         game = False
 
 
-async def set_playername(name):
+async def set_player_name(name):
     global player_name
     player_name = name
 
 
 async def bot_take():
-    global candys
-    take = 0
-    if candys % 29 != 0:
-        take = candys % 29
+    global total_count
+    if total_count % 29 != 0:
+        take = total_count % 29
     else:
         take = random.randint(1, 28)
     return take
+    return take
 
 
-async def candys_take(take):
-    global candys
-    candys = candys - take
-    return candys
+async def set_total_count(take):
+    global total_count
+    total_count = total_count - take
 
 
-async def get_playername():
+async def get_player_name():
     global player_name
     return player_name
 
 
-async def get_candys():
-    global candys
-    return candys
+async def get_total_count():
+    global total_count
+    return total_count
 
 
-async def get_gamestatus():
+async def get_game():
     global game
     return game

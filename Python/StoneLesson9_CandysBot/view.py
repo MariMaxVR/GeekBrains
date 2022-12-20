@@ -1,6 +1,7 @@
-from bot_config import bot
+from bot import bot
 
-async def start_bot(message):
+
+async def start_game(message):
     await bot.send_message(message.from_user.id, f'{message.from_user.first_name} Привет!\n'
                            '*** Добро пожаловать в игру "Конфетный Человек" ***\n'
                            'Режим игры - игрок против компьютера.\n'
@@ -11,18 +12,23 @@ async def start_bot(message):
 
 
 async def player_take(message):
-    await bot.send_message(message.from_user.id, f'Какое количество конфет вы берёте на этом ходу? >>> ')
+    await bot.send_message(message.from_user.id, f'Какое количество конфет вы берёте?')
 
 
-async def print_info(message, name_player1, take, candys, name_player2):
+async def table_info(message, name_player1, take, total_count, name_player2):
     await bot.send_message(message.from_user.id, f'{name_player1} взял {take} конфет со стола.\n'
-                           f'На столе осталось {candys} конфет. Ход игрока {name_player2}, сколько конфет будете брать? ')
+                           f'На столе осталось {total_count} конфет. Ход игрока {name_player2}.')
 
 
-async def print_winner(message, name, take):
-    await bot.send_message(message.from_user.id, f'{name} взял {take} конфет со стола\n,'
-                           f'на столе не осталось конфет. Игрок {name} победил!')
+async def win(message, name, take):
+    await bot.send_message(message.from_user.id, f'{name} забрал последние конфеты со стола,'
+                           f'на столе ничего не осталось. Игрок {name} победил!\n'
+                           f'Чтобы запустить игру заново запустите команду /start')
 
 
-async def print_error(message):
-    await bot.send_message(message.from_user.id, f'За один ход можно брать только от 1 до 28 конфет')
+async def wrong_take(message):
+    await bot.send_message(message.from_user.id, f'За один ход можно брать только от 1 до 28 конфет.')
+
+
+async def wrong_number(message):
+    await bot.send_message(message.from_user.id, f'Введено некорректное значение! Повторите ввод!')
