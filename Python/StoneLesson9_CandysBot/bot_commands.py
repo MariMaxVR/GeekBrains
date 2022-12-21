@@ -50,4 +50,3 @@ async def player_turn(message: types.Message):
         if await model.get_total_candys() <= 0:
             await view.print_winner(message, player_name)
             await model.set_game()
-            

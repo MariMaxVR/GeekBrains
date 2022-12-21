@@ -32,4 +32,3 @@ async def wrong_take(message):
 
 async def wrong_number(message):
     await bot.send_message(message.from_user.id, f'Введено некорректное значение! Повторите ввод!')
-    
