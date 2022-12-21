@@ -16,7 +16,7 @@ async def player_take(message):
 
 
 async def print_info(message, from_player, take, total_count, to_player):
-    await bot.send_message(message.from_user.id, f'{from_player} взял {take} конфет со стола.\n'
+    await bot.send_message(message.from_user.id, f'Игрок {from_player} взял {take} конфет со стола.\n'
                            f'На столе осталось {total_count} конфет. Ход игрока {to_player}.')
 
 
