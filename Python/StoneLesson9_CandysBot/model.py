@@ -29,7 +29,6 @@ async def bot_take():
     else:
         take = random.randint(1, 28)
     return take
-    return take
 
 
 async def take_candys(take):
