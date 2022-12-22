@@ -5,6 +5,7 @@ player_name = ''
 total_candys = 150
 game_mode = 0
 
+
 async def set_game():
     global game
     global player_name
