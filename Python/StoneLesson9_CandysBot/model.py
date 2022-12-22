@@ -37,7 +37,7 @@ async def bot_take():
         if total_candys <= 28:
             take = total_candys
         else:
-            take = random.randint(1,28)
+            take = random.randint(1, 28)
     return take
 
 
@@ -59,3 +59,13 @@ async def get_total_candys():
 async def get_game_status():
     global game
     return game
+
+
+async def set_game_mode(value):
+    global game_mode
+    game_mode = value
+
+
+async def get_game_mode():
+    global game_mode
+    return game_mode
