@@ -23,7 +23,7 @@ async def print_info(message, from_player, take, total_count, to_player):
 async def print_winner(message, name):
     await bot.send_message(message.from_user.id, f'{name} забрал последние конфеты со стола,'
                            f'на столе ничего не осталось. Игрок {name} победил!\n'
-                           f'Чтобы запустить игру заново запустите команду /start')
+                           f'Чтобы запустить игру заново введите команду /start')
 
 
 async def wrong_take(message):
