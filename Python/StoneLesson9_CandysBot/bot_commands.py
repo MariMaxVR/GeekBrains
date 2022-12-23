@@ -3,6 +3,14 @@ from aiogram import types
 import model
 import view
 
+#1. Не понятен принцип почему бот передаёт ход игроку без доп. команды (await player_turn(message)),
+# а игроку требуется дополнительно код await bot_turn(message) чтобы ход перешёл к компьютеру.
+
+#2. Логика "сложности" игры, как добавить возможность установки значения game_mode 0 или 1,
+# в ручную работает.
+
+#3. Обработка ошибки ввода, программа работает корректно но в консоли возникает сообщение. 
+# Проблема в блоке кода player_turn -> await player_turn() или то что message.text? 
 
 async def start_game(message: types.Message):
     await model.set_game()
