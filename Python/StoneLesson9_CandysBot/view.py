@@ -13,7 +13,7 @@ async def start_game(message):
 
 async def ask_game_mode(message):
     await bot.send_message(message.from_user.id, f'Если хотите, в любой момент вы можете выбрать сложность игры используя команды:\n'
-                                                 f'/hard - сложно, /easy - легко(стоит по-умолчанию).')
+                                                 f'/hard - сложно, /easy - легко (стоит по-умолчанию).')
 
 
 async def game_mode_hard(message):
