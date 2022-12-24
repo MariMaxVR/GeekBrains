@@ -12,8 +12,16 @@ async def start_game(message):
 
 
 async def ask_game_mode(message):
-    await bot.send_message(message.from_user.id, f'Выберите сложность игры используя команду /level *значение*'
-                                                 f'. 0 - Легко, 1 - Сложно. По-умолчанию стоит лёгкая сложность')
+    await bot.send_message(message.from_user.id, f'Если хотите, в любой момент вы можете выбрать сложность игры используя команды:\n'
+                                                 f'/hard - сложно, /easy - легко(стоит по-умолчанию).')
+
+
+async def game_mode_hard(message):
+    await bot.send_message(message.from_user.id, f'Установлен высокий уровень сложности')
+
+
+async def game_mode_easy(message):
+    await bot.send_message(message.from_user.id, f'Установлен низкий уровень сложности')
 
 
 async def player_take(message):
@@ -37,6 +45,3 @@ async def wrong_take(message):
 
 async def wrong_number(message):
     await bot.send_message(message.from_user.id, f'Введено некорректное значение! Повторите ввод!')
-
-
-
