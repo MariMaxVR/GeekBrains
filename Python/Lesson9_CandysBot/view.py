@@ -40,7 +40,7 @@ async def print_winner(message, name):
 
 
 async def wrong_take(message):
-    await bot.send_message(message.from_user.id, f'За один ход можно брать только от 1 до 28 конфет.')
+    await bot.send_message(message.from_user.id, f'За один ход можно брать только от 1 до 28 конфет. Сколько берёте?')
 
 
 async def wrong_number(message):
