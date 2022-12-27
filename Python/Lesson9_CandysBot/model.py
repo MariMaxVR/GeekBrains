@@ -59,8 +59,6 @@ async def get_total_candys():
 async def set_total_candys(value):
     global total_candys
     total_candys = value
-    print(value)
-    print (total_candys)
 
 
 async def get_game_status():
