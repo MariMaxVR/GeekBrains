@@ -29,8 +29,10 @@ async def game_mode_easy(message: types.Message):
 
 
 # async def candys_total(message: types.Message):
-#     set = int(message.text)
-#     await model.set_total_candys(set)
+#     await view.ask_total_candys(message.answer)
+#     set = message.text
+#     # await model.set_total_candys(set)
+#     print(set)
 
 
 async def bot_turn(message: types.Message):

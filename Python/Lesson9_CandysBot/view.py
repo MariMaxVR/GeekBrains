@@ -17,8 +17,8 @@ async def ask_game_mode(message):
 
 
 async def ask_total_candys(message):
-    await message.answer(f'/candys позволит указать какое количество конфет будет перед началом игры.\n'
-                         f'Внимание! Данная команда запускает игру заново.')
+    await bot.send_message(message.from_user.id, f'/candys позволит указать какое количество конфет будет перед началом игры.\n'
+                                                 f'Внимание! Данная команда запускает игру заново.')
 
 
 async def game_mode_hard(message):
