@@ -4,9 +4,11 @@ import model
 import view
 
 
+async def preview(message: types.Message):
+    await view.start_game(message)
+
 async def start_game(message: types.Message):
     await model.set_game()
-    await view.start_game(message)
     player_name = message.from_user.first_name
     await model.set_player_name(player_name)
     game_start = random.randint(0, 1)
