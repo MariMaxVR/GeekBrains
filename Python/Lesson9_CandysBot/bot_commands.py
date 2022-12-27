@@ -8,6 +8,7 @@ async def start_game(message: types.Message):
     await model.set_game()
     await view.start_game(message)
     await view.ask_game_mode(message)
+    # await view.ask_total_candys(message)
     player_name = message.from_user.first_name
     await model.set_player_name(player_name)
     game_start = random.randint(0, 1)
@@ -25,6 +26,11 @@ async def game_mode_hard(message: types.Message):
 async def game_mode_easy(message: types.Message):
     await view.game_mode_easy(message)
     await model.set_game_mode(0)
+
+
+# async def candys_total(message: types.Message):
+#     set = int(message.text)
+#     await model.set_total_candys(set)
 
 
 async def bot_turn(message: types.Message):
