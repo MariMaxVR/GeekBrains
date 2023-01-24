@@ -47,7 +47,7 @@ public class Program
                .replace("предмет:", "");
                
                String[] array = line.split(" ");
-               
+
     String result = "";
 
     for (int i = 0; i < array.length; i+=3) 
@@ -57,6 +57,7 @@ public class Program
 
     System.out.println(result);
 
+    
   } 
 
 }
