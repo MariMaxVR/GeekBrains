@@ -16,8 +16,6 @@ import java.io.File;
 Создать метод, который запишет результат работы в файл. Обработайте исключения и запишите ошибки в лог файл.
 */
 
-
-
 public class Program 
 {
   public static void main(String[] args) throws Exception
@@ -43,10 +41,8 @@ public class Program
 
 
     StringBuilder sb = new StringBuilder();
-
     for (int i = 0; i < array.length; i+=3) 
     {
-      // result += "Студент " + array[i] + " получил " + array[i+1] + " по предмету " + array[i+2] + ".\n";
       sb.append (" Студенты ");
       sb.append (array[i]);
       sb.append(" получил ");
