@@ -54,10 +54,11 @@ public class Program
     {
       result += "Студент " + array[i] + " получил " + array[i+1] + " по предмету " + array[i+2] + ".\n";
     }
-
-    System.out.println(result);
-
-    
+  
+    File fileResult = new File("Java\\Lesson2_HomeWork\\result.txt");
+    PrintWriter pw = new PrintWriter(fileResult);
+    pw.println(result);
+    pw.close();
   } 
 
 }
