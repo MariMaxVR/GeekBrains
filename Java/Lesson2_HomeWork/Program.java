@@ -27,7 +27,7 @@ import java.io.File;
 
 public class Program 
 {
-  public static void main(String[] args) throws FileNotFoundException
+  public static void main(String[] args) throws Exception
   {
     String path = "Java\\Lesson2_HomeWork\\data.txt";
 
@@ -63,11 +63,11 @@ public class Program
       sb.append(".\n");
     }
     System.out.println(sb);
+    
     //Запись результатной строки в файл
     File fileResult = new File("Java\\Lesson2_HomeWork\\result.txt");
     PrintWriter pw = new PrintWriter(fileResult);
     pw.print(sb);
     pw.close();
-
   } 
 }
