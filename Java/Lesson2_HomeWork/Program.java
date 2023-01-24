@@ -49,62 +49,25 @@ public class Program
                String[] array = line.split(" ");
 
     String result = "";
+    StringBuilder sb = new StringBuilder();
 
     for (int i = 0; i < array.length; i+=3) 
     {
-      result += "Студент " + array[i] + " получил " + array[i+1] + " по предмету " + array[i+2] + ".\n";
+      // result += "Студент " + array[i] + " получил " + array[i+1] + " по предмету " + array[i+2] + ".\n";
+      sb.append (" Студенты ");
+      sb.append (array[i]);
+      sb.append(" получил ");
+      sb.append(array[i+1]);
+      sb.append(" по предмету ");
+      sb.append(array[i+2]);
+      sb.append(".\n");
     }
-  
+
+    //Запись результатной строки в файл
     File fileResult = new File("Java\\Lesson2_HomeWork\\result.txt");
     PrintWriter pw = new PrintWriter(fileResult);
-    pw.println(result);
+    pw.print(sb);
     pw.close();
+
   } 
-
 }
-
-
-
-
-// Второй вариант с переработанным кодом:
-
-// public class Program 
-// {
-//   public static void main(String[] args) throws IOException 
-//   {
-//     StringBuilder sb = new StringBuilder();
-//     try (BufferedReader br = new BufferedReader(new FileReader("Java\\Lesson2_HomeWork\\data.txt"))) 
-//     {
-//       String data;
-//       while ((data = br.readLine()) != null) {
-//         sb.append(data);
-//       }
-//     } catch (IOException e) 
-//     {
-//       e.printStackTrace();
-//     }
-//     // создание словаря
-//     Map<String, String> map = new HashMap<>();
-
-//     // Парсим строку, убираем лишние символы и записываем данные в словарь
-//     String[] keys = sb.toString().replace("{", "")
-//                       .replace("[", "")
-//                       .replace("]", "")
-//                       .replace("\"", "")
-//                       .replaceAll("\\s", "").split("},");
-
-//     for (String data : keys) 
-//     {
-//       String[] person = data.split(",");
-//       for (String keyValues : person) 
-//       {
-//         String[] keyValue = keyValues.replace("}", "").split(":");
-//         String key = keyValue[0];
-//         String value = keyValue[1];
-//         map.put(key, value);
-//       }
-//       System.out.printf("Студент %s получил %s по предмету %s.\n", map.get("фамилия"),
-//           map.get("оценка"), map.get("предмет"));
-//     }
-//   }
-// }
