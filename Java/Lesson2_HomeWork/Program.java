@@ -62,7 +62,7 @@ public class Program
       sb.append(array[i+2]);
       sb.append(".\n");
     }
-
+    System.out.println(sb);
     //Запись результатной строки в файл
     File fileResult = new File("Java\\Lesson2_HomeWork\\result.txt");
     PrintWriter pw = new PrintWriter(fileResult);
