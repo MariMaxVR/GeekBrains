@@ -43,7 +43,7 @@ public class Program
     StringBuilder sb = new StringBuilder();
     for (int i = 0; i < array.length; i+=3) 
     {
-      sb.append (" Студенты ");
+      sb.append (" Студент ");
       sb.append (array[i]);
       sb.append(" получил ");
       sb.append(array[i+1]);
