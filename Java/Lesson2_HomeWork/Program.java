@@ -1,13 +1,6 @@
 package Java.Lesson2_HomeWork;
 
-import java.io.BufferedReader;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.FileWriter;
-import java.io.IOException;
 import java.io.PrintWriter;
-import java.util.HashMap;
-import java.util.Map;
 import java.util.Scanner;
 import java.io.File;
 
@@ -48,7 +41,7 @@ public class Program
                
                String[] array = line.split(" ");
 
-    String result = "";
+
     StringBuilder sb = new StringBuilder();
 
     for (int i = 0; i < array.length; i+=3) 
