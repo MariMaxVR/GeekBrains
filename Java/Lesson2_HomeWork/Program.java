@@ -23,7 +23,7 @@ public class Program
     public static void main(String[] args)  throws FileNotFoundException
     {
 
-        File file = new File("Users\Max\GeekBrains\Java\Lesson2_HomeWork\data.txt");
+        File file = new File("Users\\Max\\GeekBrains\\Java\\Lesson2_HomeWork\\data.txt");
         Scanner scanner = new Scanner(file);
         while(scanner.hasNextLine())
         {
