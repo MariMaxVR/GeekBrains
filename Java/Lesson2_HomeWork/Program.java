@@ -1,12 +1,11 @@
 package Java.Lesson2_HomeWork;
 
-import java.io.File;
-import java.io.FileNotFoundException;
+import java.io.PrintWriter;
 import java.util.Scanner;
+import java.io.File;
 
 /* 
-
-Дана json строка { { "фамилия":"Иванов","оценка":"5","предмет":"Математика"},{"фамилия":"Петрова","оценка":"4","предмет":"Информатика"},{"фамилия":"Краснов","оценка":"5","предмет":"Физика"}} 
+Дана json строка { [ "фамилия":"Иванов","оценка":"5","предмет":"Математика"},{"фамилия":"Петрова","оценка":"4","предмет":"Информатика"},{"фамилия":"Краснов","оценка":"5","предмет":"Физика"]} 
 
 Задача написать метод(ы), который распарсить строку и выдаст ответ вида: 
 Студент Иванов получил 5 по предмету Математика. 
@@ -14,50 +13,46 @@ import java.util.Scanner;
 Студент Краснов получил 5 по предмету Физика. 
 
 Используйте StringBuilder для подготовки ответа. 
-Создать метод, который запишет результат работы в файл Обработайте исключения и запишите ошибки в лог файл.
-
+Создать метод, который запишет результат работы в файл. Обработайте исключения и запишите ошибки в лог файл.
 */
 
-public class Program 
-{
-    public static void main(String[] args)  throws FileNotFoundException
-    {
+public class Program {
+    public static void main(String[] args) throws Exception {
+        String path = "Java\\Lesson2_HomeWork\\data.txt";
 
-        File file = new File("Users\\Max\\GeekBrains\\Java\\Lesson2_HomeWork\\data.txt");
+        File file = new File(path);
         Scanner scanner = new Scanner(file);
-        while(scanner.hasNextLine())
-        {
-            System.out.println(scanner.nextLine());
+        String line = scanner.nextLine();
+        scanner.close();
+
+        line = line.replace("{", "")
+                .replace("}", "")
+                .replace("[", "")
+                .replace("]", "")
+                .replace("\"", "")
+                .replace(",", " ")
+                .replace("фамилия:", "")
+                .replace("оценка:", "")
+                .replace("предмет:", "");
+
+        String[] array = line.split(" ");
+
+        StringBuilder sb = new StringBuilder();
+        for (int i = 0; i < array.length; i += 3) {
+            sb.append(" Студент ");
+            sb.append(array[i]);
+            sb.append(" получил ");
+            sb.append(array[i + 1]);
+            sb.append(" по предмету ");
+            sb.append(array[i + 2]);
+            sb.append(".\n");
         }
+        System.out.println(sb);
+
+        // Запись результатной строки в файл
+        File fileResult = new File("Java\\Lesson2_HomeWork\\result.txt");
+        PrintWriter pw = new PrintWriter(fileResult);
+        pw.print(sb);
+        pw.close();
     }
 }
-
-
-
-
-
-// public class task3 {
-//     public static void main(String[] args) throws Exception {
-//         String [] arrayData =  lib.ReadLineFromFile("dataForTask3.txt");
-//         for(int i = 0; i < arrayData.length; i++) {
-//             System.out.println(PrintLine(arrayData[i]));
-//         }
-        
-//     }
-//     public static StringBuilder PrintLine(String line) {
-//         String line1 = line.replace("{", "");
-//         String line2 = line1.replace("}", "");
-//         String line3 = line2.replaceAll("\"", "");
-//         String line4 = line3.replace("[", "");
-//         String line5 = line4.replace("]", "");
-//         StringBuilder result = new StringBuilder("");
-//         String [] arrayData = line5.split(",");
-//         String [] listName = {"Студент ", " получил ", " по предмету "};
-//         for (int i =0; i < arrayData.length; i++) {
-//             String[] arrData = arrayData[i].split(":");
-//             result.append(listName[i]);
-//             result.append(arrData[1]);
-//             }
-//         return result;
-//     }
-// }
