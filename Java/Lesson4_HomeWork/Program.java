@@ -17,7 +17,7 @@ public class Program {
         list.add("v");
         list.add("a");
         list.add("!");
-
+        
         System.out.println("Исходный список: " + list);
 
         list = reverseList(list);
@@ -66,10 +66,10 @@ public class Program {
     // ****************************************************************************
     // Метод для 1 задачи:
 
-    static LinkedList reverseList(LinkedList list) {
+    static LinkedList<String> reverseList(LinkedList<String> list) {
         LinkedList templist = new LinkedList<>();
-        for (int i = list.size() - 1; i >= 0; i--) {
-            templist.add(list.get(i));
+        for (String element: list){
+            templist.addFirst(element);
         }
         return templist;
     }
