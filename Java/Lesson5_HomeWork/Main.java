@@ -3,6 +3,7 @@ package Java.Lesson5_HomeWork;
 import java.util.HashMap;
 import java.util.List;
 
+
 /*
 
 1.Реализуйте структуру телефонной книги с помощью HashMap, учитывая, что 1 человек может иметь несколько телефонов.
@@ -44,7 +45,7 @@ public class Main {
         for (HashMap.Entry entry : list.entrySet()) {
             if (entry.getKey().equals(name)) {
                 System.out.println("У контакта " + name + " найдены следующие телефонные номера: " + list.get(name));
-                
+
             }
         }
     }
