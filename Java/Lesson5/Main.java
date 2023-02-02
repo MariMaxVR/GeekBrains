@@ -10,7 +10,7 @@ import java.util.logging.SimpleFormatter;
 
 public class Main {
     public static void main(String[] args) {
-//        System.out.println(ex2("<{a}+{(d*3)}>"));
+        
         System.out.println(ex3("Мороз и солнце день чудесный " +
                 "Еще ты дремлешь друг прелестный " +
                 "Пора красавица проснись."));
