@@ -1,7 +1,5 @@
-package Java.Lesson4;
 
 import java.util.Arrays;
-import java.util.LinkedList;
 
 /*
 Реализовать стэк с помощью массива.
@@ -12,19 +10,20 @@ public class MyStack {
     private int[] array;
     private int size;
 
-    MyStack(int capacity){
+    MyStack(int capacity) {
         array = new int[capacity];
     }
 
-    int size(){
+    int size() {
         return size;
     }
 
-    boolean empty(){
+    boolean empty() {
         return size == 0;
     }
-    void push(int element){
-        if (array.length <= size){
+
+    void push(int element) {
+        if (array.length <= size) {
             int[] array2 = new int[array.length + 10];
             System.arraycopy(array, 0, array2, 0, array.length);
             array = array2;
@@ -32,11 +31,13 @@ public class MyStack {
         array[size] = element;
         size++;
     }
-    int peek(){
-        return array[size-1];
+
+    int peek() {
+        return array[size - 1];
     }
-    int pop(){
-        int val = array[size-1];
+
+    int pop() {
+        int val = array[size - 1];
         size--;
         return val;
     }
