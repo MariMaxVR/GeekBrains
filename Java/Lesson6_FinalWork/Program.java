@@ -25,17 +25,17 @@ import java.util.Set;
 public class Program {
     public static void main(String[] args) {
 
-        Notebook notebook1 = new Notebook("Asus", "4", "1000", "Windows", "grey");
-        Notebook notebook2 = new Notebook("Asus", "4", "1000", "Lunex", "black");
-        Notebook notebook3 = new Notebook("Asus", "4", "2000", "Windows", "black");
-        Notebook notebook4 = new Notebook("Asus", "16", "1000", "Windows", "grey");
-        Notebook notebook5 = new Notebook("Huawei", "8", "1000", "Windows", "black");
+        Laptop laptop1 = new Laptop("2", "Lenovo", "4", "512", "DOS", "black");
+        Laptop laptop2 = new Laptop("3", "HP", "4", "256", "Windows", "white");
+        Laptop laptop3 = new Laptop("1", "Asus", "2", "256", "Windows", "black");
+        Laptop laptop4 = new Laptop("4", "Asus", "16", "1024", "Linux", "grey");
+        Laptop laptop5 = new Laptop("5", "Samsung", "8", "1024", "Windows", "black");
 
-        Set<Notebook> notebooks = new HashSet<>(List.of(notebook1, notebook2,
-                notebook3, notebook4, notebook5));
+        Set<Laptop> laptops = new HashSet<>(List.of(laptop1, laptop2,
+                laptop3, laptop4, laptop5));
 
         Map<String, String> sel = selectCriteria();
-        sort(sel, notebooks);
+        sort(sel, laptops);
 
     }
 
@@ -68,38 +68,38 @@ public class Program {
 
     }
 
-    public static void sort(Map<String, String> criterias, Set<Notebook> notebooks) {
+    public static void sort(Map<String, String> criterias, Set<Laptop> laptops) {
 
-        Set<Notebook> temp = new HashSet<>(notebooks);
-        for (Notebook notebook : notebooks) {
+        Set<Laptop> temp = new HashSet<>(laptops);
+        for (Laptop laptop : laptops) {
 
             for (Object pair : criterias.keySet()) {
 
-                if (pair.equals("1") && !notebook.getName().equals(criterias.get(pair))) {
-                    temp.remove(notebook);
+                if (pair.equals("1") && !laptop.gettrademark().equals(criterias.get(pair))) {
+                    temp.remove(laptop);
                 }
                 for (Object pair1 : criterias.keySet()) {
 
-                    if (pair1.equals("2") && !notebook.getRam().equals(criterias.get(pair1))) {
-                        temp.remove(notebook);
+                    if (pair1.equals("2") && !laptop.getram_value().equals(criterias.get(pair1))) {
+                        temp.remove(laptop);
 
                     }
                     for (Object pair2 : criterias.keySet()) {
 
-                        if (pair2.equals("3") && !notebook.getHardDisk().equals(criterias.get(pair2))) {
-                            temp.remove(notebook);
+                        if (pair2.equals("3") && !laptop.getHardDisk().equals(criterias.get(pair2))) {
+                            temp.remove(laptop);
 
                         }
                         for (Object pair3 : criterias.keySet()) {
 
-                            if (pair3.equals("4") && !notebook.getOperatingSystem().equals(criterias.get(pair3))) {
-                                temp.remove(notebook);
+                            if (pair3.equals("4") && !laptop.getOperatingSystem().equals(criterias.get(pair3))) {
+                                temp.remove(laptop);
 
                             }
                             for (Object pair4 : criterias.keySet()) {
 
-                                if (pair4.equals("5") && !notebook.getColour().equals(criterias.get(pair4))) {
-                                    temp.remove(notebook);
+                                if (pair4.equals("5") && !laptop.getColour().equals(criterias.get(pair4))) {
+                                    temp.remove(laptop);
 
                                 }
                             }
