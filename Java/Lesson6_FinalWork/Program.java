@@ -50,13 +50,13 @@ public class Program {
     public static Map<String, String> selectCriteria() {
         Map<String, String> resultCriterias = new HashMap<>();
         while (true) {
-            System.out.print("Введите 'y' для фильтрации и 'n' для вывода результатов: ");
+            System.out.print("Введите 'y' для фильтрации и 'Enter' для вывода результатов: ");
             String question = scanner();
             if (question.equals("y")) {
                 System.out.print(
                         "Выберите критерий фильтрации результатов:" +
-                        "\n 1 - Фирма \n 2 - Объём ОЗУ \n 3 - Объем SSD диска \n" +
-                        " 4 - Операционная система \n 5 - Цвет" + "\n Введите значение >>> ");
+                                "\n 1 - Фирма \n 2 - Объём ОЗУ \n 3 - Объем SSD диска \n" +
+                                " 4 - Операционная система \n 5 - Цвет" + "\n Введите значение >>> ");
                 String key = scanner();
                 System.out.print("Введите значения для выбранного критерия: ");
                 String value = scanner();
@@ -115,7 +115,7 @@ public class Program {
         if (temp.isEmpty()) {
             System.out.println("По введенным критериям ничего не найдено!");
         } else {
-            System.out.println("Вот что мы можем предложить: \n" + temp.toString());
+            System.out.println("Ноутбуки подходящие под данные критерии выбора: \n" + temp.toString());
         }
 
     }
