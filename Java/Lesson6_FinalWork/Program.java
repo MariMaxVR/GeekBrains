@@ -20,19 +20,21 @@ import java.util.Set;
 
 Далее нужно запросить минимальные значения для указанных критериев - сохранить параметры фильтрации можно также в Map.
 Отфильтровать ноутбуки из первоначального множества и вывести проходящие по условиям.
- */
+*/
 
 public class Program {
     public static void main(String[] args) {
 
-        Laptop laptop1 = new Laptop("2", "Lenovo", "4", "512", "DOS", "black");
-        Laptop laptop2 = new Laptop("3", "HP", "4", "256", "Windows", "white");
-        Laptop laptop3 = new Laptop("1", "Asus", "2", "256", "Windows", "black");
+        Laptop laptop1 = new Laptop("1", "Lenovo", "4", "512", "DOS", "black");
+        Laptop laptop2 = new Laptop("2", "HP", "4", "256", "Windows", "white");
+        Laptop laptop3 = new Laptop("3", "Asus", "2", "256", "Windows", "black");
         Laptop laptop4 = new Laptop("4", "Asus", "16", "1024", "Linux", "grey");
         Laptop laptop5 = new Laptop("5", "Samsung", "8", "1024", "Windows", "black");
+        Laptop laptop6 = new Laptop("6", "Samsung", "16", "512", "DOS", "grey");
+        Laptop laptop7 = new Laptop("7", "Lenovo", "8", "1024", "Windows", "black");
 
         Set<Laptop> laptops = new HashSet<>(List.of(laptop1, laptop2,
-                laptop3, laptop4, laptop5));
+                laptop3, laptop4, laptop5, laptop6, laptop7));
 
         Map<String, String> sel = selectCriteria();
         sort(sel, laptops);
@@ -48,14 +50,15 @@ public class Program {
     public static Map<String, String> selectCriteria() {
         Map<String, String> resultCriterias = new HashMap<>();
         while (true) {
-            System.out.println("Вы хотите выбрать критерий? Если да введите 'y', если нет введите 'n'");
+            System.out.print("Введите 'y' для начала подбора и 'n' для вывода результатов: ");
             String question = scanner();
             if (question.equals("n")) {
                 break;
             } else {
 
                 System.out.println(
-                        "Введите цифру, соответствующую необходимому критерию: \n 1 - Название \n 2 - ОЗУ \n 3 - Объем ЖД \n 4 - Операционная система \n 5 - Цвет");
+                        "Введите цифру, соответствующую необходимому критерию:" + 
+                        "\n 1 - Фирма \n 2 - Объём ОЗУ \n 3 - Объем SSD диска \n 4 - Операционная система \n 5 - Цвет");
                 String key = scanner();
                 System.out.println("Введите значения для выбранного критерия: ");
                 String value = scanner();
@@ -63,9 +66,9 @@ public class Program {
                 resultCriterias.put(key, value);
             }
         }
+        
         System.out.println(resultCriterias);
         return resultCriterias;
-
     }
 
     public static void sort(Map<String, String> criterias, Set<Laptop> laptops) {
@@ -75,12 +78,12 @@ public class Program {
 
             for (Object pair : criterias.keySet()) {
 
-                if (pair.equals("1") && !laptop.gettrademark().equals(criterias.get(pair))) {
+                if (pair.equals("1") && !laptop.getTrademark().equals(criterias.get(pair))) {
                     temp.remove(laptop);
                 }
                 for (Object pair1 : criterias.keySet()) {
 
-                    if (pair1.equals("2") && !laptop.getram_value().equals(criterias.get(pair1))) {
+                    if (pair1.equals("2") && !laptop.getRamValue().equals(criterias.get(pair1))) {
                         temp.remove(laptop);
 
                     }
