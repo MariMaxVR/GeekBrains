@@ -26,7 +26,7 @@ public class Program {
     public static void main(String[] args) {
 
         Laptop laptop1 = new Laptop("1", "Lenovo", "4", "512", "DOS", "black");
-        Laptop laptop2 = new Laptop("2", "HP", "4", "256", "Windows", "white");
+        Laptop laptop2 = new Laptop("2", "HP", "4", "256", "Windows", "grey");
         Laptop laptop3 = new Laptop("3", "Asus", "2", "256", "Windows", "black");
         Laptop laptop4 = new Laptop("4", "Asus", "16", "1024", "Linux", "grey");
         Laptop laptop5 = new Laptop("5", "Samsung", "8", "1024", "Windows", "black");
@@ -50,24 +50,24 @@ public class Program {
     public static Map<String, String> selectCriteria() {
         Map<String, String> resultCriterias = new HashMap<>();
         while (true) {
-            System.out.print("Введите 'y' для начала подбора и 'n' для вывода результатов: ");
+            System.out.print("Введите 'y' для фильтрации и 'n' для вывода результатов: ");
             String question = scanner();
-            if (question.equals("n")) {
-                break;
-            } else {
-
-                System.out.println(
-                        "Введите цифру, соответствующую необходимому критерию:" + 
-                        "\n 1 - Фирма \n 2 - Объём ОЗУ \n 3 - Объем SSD диска \n 4 - Операционная система \n 5 - Цвет");
+            if (question.equals("y")) {
+                System.out.print(
+                        "Выберите критерий фильтрации результатов:" +
+                        "\n 1 - Фирма \n 2 - Объём ОЗУ \n 3 - Объем SSD диска \n" +
+                        " 4 - Операционная система \n 5 - Цвет" + "\n Введите значение >>> ");
                 String key = scanner();
-                System.out.println("Введите значения для выбранного критерия: ");
+                System.out.print("Введите значения для выбранного критерия: ");
                 String value = scanner();
 
                 resultCriterias.put(key, value);
+
+                System.out.println(resultCriterias);
+            } else {
+                break;
             }
         }
-        
-        System.out.println(resultCriterias);
         return resultCriterias;
     }
 
