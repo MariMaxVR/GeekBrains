@@ -1,14 +1,14 @@
 
 public class Laptop {
 
-    private String id;
-    private String trademark;
-    private String ram_value;
-    private String disk_value;
-    private String oper_system;
-    private String colour;
+    String id;
+    String trademark;
+    String ram_value;
+    String disk_value;
+    String oper_system;
+    String colour;
 
-    public Laptop(String id, String trademark, String ram_value, String disk_value, String oper_system, String colour) {
+    Laptop(String id, String trademark, String ram_value, String disk_value, String oper_system, String colour) {
         this.id = id;
         this.trademark = trademark;
         this.ram_value = ram_value;
@@ -17,15 +17,15 @@ public class Laptop {
         this.colour = colour;
     }
 
-    public String getid() {
+    public String getID() {
         return id;
     }
 
-    public String gettrademark() {
+    public String getTrademark() {
         return trademark;
     }
 
-    public String getram_value() {
+    public String getRamValue() {
         return ram_value;
     }
 
@@ -43,9 +43,9 @@ public class Laptop {
 
     @Override
     public String toString() {
-        return "Ноутбук " + trademark + " ID номером в системе: " + id + ", объёмом ОЗУ: " + ram_value +
-                "GB, объёмом диска: " + disk_value + "GB, с операционной система: " + oper_system +
-                ", цвет корпуса: " + colour + "." + "\n";
+        return "Ноутбук " + trademark + " c ID номером в системе: " + id + ", объёмом ОЗУ: " + ram_value +
+                "GB, объёмом диска: " + disk_value + "GB, операционной система: " + oper_system +
+                ", Цвет корпуса: " + colour + "." + "\n";
     }
 
 }
