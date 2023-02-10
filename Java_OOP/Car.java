@@ -82,10 +82,6 @@ public class Car {
      * Или пусть авто заедет за фруктами :-)
      * Добавьте несколько произвольных методов и свойств
      * 
-     * ДОП: Сделать гонки:
-     * - задаём растояние
-     * - едут до финиша.
-     * Сказать кто победит.
      */
 
     Random random = new Random();
@@ -99,7 +95,13 @@ public class Car {
         }
     }
 
-    
+    /*
+     * ДОП: Сделать гонки:
+     * - задаём растояние
+     * - едут до финиша.
+     * Сказать кто победит.
+     */
+
     public void startRace(Object carModel1, Object carModel2) {
         int distanceRace = 100;
         int distanceCar1 = 0;
