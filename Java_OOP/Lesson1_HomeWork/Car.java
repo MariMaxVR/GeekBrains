@@ -31,7 +31,7 @@ public class Car {
         this.price = price;
         this.color = color;
         this.power = power;
-        this.engineStatus = false;
+        this.engineStatus = engineStatus;
     }
 
     /*
