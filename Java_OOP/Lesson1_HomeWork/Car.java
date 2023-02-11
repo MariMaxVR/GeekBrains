@@ -57,7 +57,7 @@ public class Car {
 
     public void engineStatus(String carModel) {
         if (engineStatus == false) {
-            System.out.println("Двигатель автомобиля " + carModel + " не запущен, движение невозможно.");
+            System.out.println("Двигатель автомобиля " + carModel + " не запущен, движение невозможно!");
         } else {
             System.out.println("Двигатель автомобиля " + carModel + " запущен, можно ехать.");
         }
@@ -66,7 +66,7 @@ public class Car {
     public void engineSwitch(String carModel) {
         if (engineStatus) {
             engineStatus = false;
-            System.out.printf("Вы приехали, двигатель автомобиля %s остановлен!\n", carModel);
+            System.out.printf("Вы приехали, двигатель автомобиля %s остановлен.\n", carModel);
 
         } else {
             engineStatus = true;
