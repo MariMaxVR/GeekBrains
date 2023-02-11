@@ -145,7 +145,7 @@ public class Car {
         System.out.println("<Автомобиль сигналит>");
     }
 
-    Random random = new Random();
+    static Random random = new Random();
 
     public void driverHungry() {
         int x = random.nextInt(0, 2);
@@ -163,11 +163,11 @@ public class Car {
      * Сказать кто победит.
      */
 
-    public void printStars() {
+    public static void printStars() {
         System.out.println("****************************************");
     }
 
-    public void startRace(String carModel1, String carModel2) throws InterruptedException {
+    public static void startRace(String carModel1, String carModel2) throws InterruptedException {
         int distanceRace = 100;
         int distanceCar1 = 0;
         int distanceCar2 = 0;

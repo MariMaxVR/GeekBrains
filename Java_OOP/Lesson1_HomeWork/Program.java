@@ -27,7 +27,10 @@ public class Program {
         Car.carCompareYear(car1.getModel(), car1.getYear(), car2.getModel(), car2.getYear());
         Car.carComparePower(car1.getModel(), car1.getPower(), car2.getModel(), car2.getPower());
 
-        // car1.startRace(car1.getModel(), car2.getModel());
+        // car1.startRace(car1.getModel(), car2.getModel()); // Если НЕ объявлять метод в виде static,
+                                                          // но получить доступ можно только через объект класса(?)
+
+        // Car.startRace(car1.getModel(), car2.getModel());  // Если объявить метод и внутренник методы static
 
     }
 }
