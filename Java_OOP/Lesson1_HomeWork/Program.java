@@ -9,24 +9,21 @@ public class Program {
         Car car1 = new Car("Ford Fiesta", 2010, 10000, "Black", 1.8, false);
         Car car2 = new Car("Mazda", 2012, 15500, "Green", 1.6, false);
 
-        // car1.getInfo();
-        // car2.getInfo();
+        car1.getInfo();
+        car2.getInfo();
 
-        // car1.engineStatus(car1.getModel());
-        // car1.engineSwitch(car1.getModel());
-        // car1.road(car1.getModel(), "Москва");
-        // System.out.println();
-        // car2.engineStatus(car2.getModel());
-        // car2.road(car2.getModel(), "Санкт-Петербург");
+        car1.engineStatus(car1.getModel());
+        car1.engineSwitch(car1.getModel());
+        car1.road(car1.getModel(), "Москва");
+        System.out.println();
+        car2.engineStatus(car2.getModel());
+        car2.road(car2.getModel(), "Санкт-Петербург");
 
-        // Car.carCompareYear(car1.getModel(), car1.getYear(), car2.getModel(), car2.getYear());
-        // Car.carComparePower(car1.getModel(), car1.getPower(), car2.getModel(), car2.getPower());
+        Car.carCompareYear(car1.getModel(), car1.getYear(), car2.getModel(), car2.getYear());
+        Car.carComparePower(car1.getModel(), car1.getPower(), car2.getModel(), car2.getPower());
 
         // Program.startRace(car1.getModel(), car2.getModel());
-
-        
     }
-
 
     /*
      * ДОП: Сделать гонки:
@@ -34,6 +31,7 @@ public class Program {
      * - едут до финиша.
      * Сказать кто победит.
      */
+
     public static void startRace(String carModel1, String carModel2) throws InterruptedException {
         Random random = new Random();
         int distanceRace = 100;
@@ -67,7 +65,7 @@ public class Program {
             Car.printStars();
             System.out.println("Автомобили финишировали одновременно!");
             Car.printStars();
-            
+
         }
     }
 }
