@@ -19,7 +19,7 @@ public class Program {
         System.out.println();
         vendine1.getStatus();
 
-        vendine1.putProduct("CocaCola", 89.50, "Soda");
+        vendine1.putProduct("CocaCola", 93.50, "Soda");
         vendine1.putProduct("CocaCola", 89.50, "Soda");
 
         System.out.println();
@@ -27,5 +27,8 @@ public class Program {
         System.out.println();
 
         vendine1.getProduct("Alyonka");
+
+        System.out.println();
+        vendine1.getStatus();
     }
 }
