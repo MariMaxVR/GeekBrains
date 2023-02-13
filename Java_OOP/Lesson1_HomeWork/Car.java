@@ -14,12 +14,12 @@ public class Car {
      * объем двигателя - power.
      */
 
-    String model;
-    int year;
-    double price;
-    String color;
-    double power;
-    boolean engineStatus;
+    private String model;
+    private int year;
+    private double price;
+    private String color;
+    private double power;
+    private boolean engineStatus;
 
     Car() {
 
@@ -105,6 +105,10 @@ public class Car {
         this.power = power;
     }
 
+    public void setColor(String color) {
+        this.color = color;
+    }
+
     public String getModel() {
         return model;
     }
@@ -156,51 +160,7 @@ public class Car {
         }
     }
 
-    /*
-     * ДОП: Сделать гонки:
-     * - задаём растояние
-     * - едут до финиша.
-     * Сказать кто победит.
-     */
-
     public static void printStars() {
         System.out.println("****************************************");
     }
-
-    public static void startRace(String carModel1, String carModel2) throws InterruptedException {
-        int distanceRace = 100;
-        int distanceCar1 = 0;
-        int distanceCar2 = 0;
-        System.out.println("Гонка на 100 километров началась!");
-        printStars();
-
-        while (distanceCar1 < distanceRace && distanceCar2 < distanceRace) {
-            distanceCar1 += random.nextInt(3, 15);
-            distanceCar2 += random.nextInt(3, 15);
-
-            if (distanceCar1 < distanceRace && distanceCar2 < distanceRace)
-                System.out.println("Автомобиль " + carModel1 + " проехал " + distanceCar1 + " километров трассы");
-            if (distanceCar2 < distanceRace && distanceCar1 < distanceRace)
-                System.out.println("Автомобиль " + carModel2 + " проехал " + distanceCar2 + " километров трассы");
-            Thread.sleep(1000);
-            System.out.println();
-        }
-        if (distanceCar1 >= distanceRace && distanceCar2 < distanceRace) {
-            printStars();
-            System.out.println("Автомобиль " + carModel2 + " проехал " + distanceCar2 + " километров трассы");
-            System.out.println("А автомобиль " + carModel1 + " проехал первым 100 км. трассы и победил в гонке!");
-            printStars();
-        } else if (distanceCar2 >= distanceRace && distanceCar1 < distanceRace) {
-            printStars();
-            System.out.println("Автомобиль " + carModel1 + " проехал " + distanceCar1 + " километров трассы");
-            System.out.println("А автомобиль " + carModel2 + " проехал первым 100 км. трассы и победил в гонке!");
-            printStars();
-        } else {
-            printStars();
-            System.out.println("Автомобили финишировали одновременно!");
-            printStars();
-        }
-
-    }
-
 }
