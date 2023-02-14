@@ -21,17 +21,13 @@ public class Car {
     private double power;
     private boolean engineStatus;
 
-    Car() {
-
-    }
-
-    Car(String model, int year, double price, String color, double power, boolean engineStatus) {
+    Car(String model, int year, double price, String color, double power) {
         this.model = model;
         this.year = year;
         this.price = price;
         this.color = color;
         this.power = power;
-        this.engineStatus = engineStatus;
+        this.engineStatus = false;
     }
 
     /*
@@ -125,10 +121,16 @@ public class Car {
         return power;
     }
 
+    public String getColor() {
+        return color;
+    }
+
     public static void carCompareYear(String carModel1, int year1, String carModel2, int year2) {
         if (year1 > year2) {
             System.out.printf("Автомобиль %s выпущен с завода позже, чем автомобиль %s.\n",
                     carModel1, carModel2);
+        } else if (year1 == year2) {
+            System.out.println("Автомобили одного года выпуска с завода.");
         } else {
             System.out.printf("Автомобиль %s выпущен с завода позже, чем автомобиль %s.\n",
                     carModel2, carModel1);
@@ -139,6 +141,9 @@ public class Car {
         if (engPower1 > engPower2) {
             System.out.printf("Автомобиль %s имеет более мощный мотор, чем автомобиль %s.\n",
                     carModel1, carModel2);
+
+        } else if (engPower1 == engPower2) {
+            System.out.println("Одинаковая мощность моторов автомобилей.");
         } else {
             System.out.printf("Автомобиль %s имеет более мощный мотор, чем автомобиль %s.\n",
                     carModel2, carModel1);
@@ -146,7 +151,7 @@ public class Car {
     }
 
     public void Beep() {
-        System.out.println("<Автомобиль сигналит>");
+        System.out.println("<<Автомобиль сигналит>>");
     }
 
     static Random random = new Random();
