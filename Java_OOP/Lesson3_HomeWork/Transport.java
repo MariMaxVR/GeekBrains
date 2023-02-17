@@ -7,6 +7,7 @@ public class Transport {
     private int maxCapacity;
     private String color;
 
+    
     public Transport(String type, String model, int maxCapacity, String color) {
         this.type = type;
         this.model = model;
@@ -14,11 +15,15 @@ public class Transport {
         this.color = color;
     }
 
-    public void Beep() {
+    public Transport(){
+        
+    }
+
+    public void Beep() { //"Какой-то метод" обозначающий, к примеру, сигнал, который должен быть создан в наследниках
 
     }
 
-    public void startEngine() {
+    public void startEngine() { //"Какой-то метод" обозначающий включение двигателя, также для наследников.
 
     }
 

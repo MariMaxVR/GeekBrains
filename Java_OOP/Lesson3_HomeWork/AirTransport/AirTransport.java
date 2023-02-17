@@ -1,12 +1,17 @@
-package Lesson3_HomeWork;
+package Lesson3_HomeWork.AirTransport;
 
-public class LandTransport extends Transport {
+import Lesson3_HomeWork.Transport;
 
-    int countOfWheels;
+public class AirTransport extends Transport {
 
-    public LandTransport(String type, String model, int maxCapacity, String color, int countOfWheels) {
+    int countOfEngines;
+    int howManyPilots;
+
+    public AirTransport(String type, String model, int maxCapacity, String color, int countOfEngines,
+            int howManyPilots) {
         super(type, model, maxCapacity, color);
-        this.countOfWheels = countOfWheels;
+        this.countOfEngines = countOfEngines;
+        this.howManyPilots = howManyPilots;
 
     }
 
@@ -24,8 +29,7 @@ public class LandTransport extends Transport {
         super.startEngine();
     }
 
-    public void refueling() {
-
+    public void lightsOn() {
+        
     }
-
 }

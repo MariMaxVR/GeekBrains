@@ -1,13 +1,21 @@
-package Lesson3_HomeWork;
+package Lesson3_HomeWork.LandTransport;
+
+
 
 public class Car extends LandTransport {
 
     int fuelType;
+    String model;
 
     public Car(String type, String model, int maxCapacity, String color, int fuelType, int countOfWheels) {
         super(type, model, maxCapacity, color, countOfWheels);
         this.fuelType = fuelType;
 
+    }
+
+    public Car(int fuelType, String model){
+        this.fuelType = fuelType;
+        this.model = model;
     }
 
     public int getFuelType() {
