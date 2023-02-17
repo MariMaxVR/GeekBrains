@@ -4,7 +4,7 @@ package Lesson3_HomeWork.AirTransport;
 
 public class AirPlane extends AirTransport {
 
-    int flightNumber;
+    private int flightNumber;
 
     public AirPlane(String type, String model, int maxCapacity, String color, int countOfEngines, int howManyPilots,
             int flightNumber) {
