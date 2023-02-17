@@ -28,7 +28,7 @@ public class AirPlane extends AirTransport {
 
     @Override
     public void Beep() {
-        System.out.println("Самолёт как-то сигналит");
+        System.out.println("Самолёт " + AirPlane.super.getModel() + " как-то сигналит");
     }
 
     @Override
