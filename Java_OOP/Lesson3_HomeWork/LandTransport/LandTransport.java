@@ -33,4 +33,12 @@ public class LandTransport extends Transport {
 
     }
 
+    public int getCountOfWheels() {
+        return countOfWheels;
+    }
+
+    public void setCountOfWheels(int countOfWheels) {
+        this.countOfWheels = countOfWheels;
+    }
+
 }

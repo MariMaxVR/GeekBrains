@@ -38,7 +38,7 @@ public class Program {
 
         // Гонка между двумя автомобилями:
 
-        // Program.startRace(car1.getModel(), car2.getModel());
+        Program.startRace(car1.getModel(), car2.getModel());
     }
 
     private static void startRace(String carModel1, String carModel2) throws InterruptedException {
