@@ -2,11 +2,9 @@ package Lesson3_HomeWork.AirTransport;
 
 public class Helicopter extends AirTransport {
 
-
-
     public Helicopter(String type, String model, int maxCapacity, String color, int countOfEngines, int howManyPilots) {
         super(type, model, maxCapacity, color, countOfEngines, howManyPilots);
-        
+
     }
 
     @Override
@@ -16,7 +14,8 @@ public class Helicopter extends AirTransport {
 
     @Override
     public void Beep() {
-        System.out.println("Вертолёт как-то сигналит");
+
+        System.out.println("Вертолёт " + super.getModel() + " Как-то сигналит");
     }
 
     @Override
@@ -29,17 +28,18 @@ public class Helicopter extends AirTransport {
         System.out.println("Вертолёт заводится");
     }
 
-
-    //Личные методы класса Helicopter
-    public void up(){ 
+    // Личные методы класса Helicopter
+    public void up() {
         System.out.println("Вертолёт поднимается");
     }
 
-    public void down(){ 
+    public void down() {
         System.out.println("Вертолёт опускается");
     }
 
-  
-    
-    
+    @Override
+    public String getModel() {
+        return super.getModel();
+    }
+
 }

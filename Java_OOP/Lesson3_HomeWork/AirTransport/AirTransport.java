@@ -4,8 +4,8 @@ import Lesson3_HomeWork.Transport;
 
 public class AirTransport extends Transport {
 
-    int countOfEngines;
-    int howManyPilots;
+    private int countOfEngines;
+    private int howManyPilots;
 
     public AirTransport(String type, String model, int maxCapacity, String color, int countOfEngines,
             int howManyPilots) {
@@ -13,6 +13,9 @@ public class AirTransport extends Transport {
         this.countOfEngines = countOfEngines;
         this.howManyPilots = howManyPilots;
 
+    }
+
+    public AirTransport(String model) {
     }
 
     @Override
@@ -30,6 +33,14 @@ public class AirTransport extends Transport {
     }
 
     public void lightsOn() {
-        
+
+    }
+
+    public int getCountOfEngines() {
+        return countOfEngines;
+    }
+
+    public int getHowManyPilots() {
+        return howManyPilots;
     }
 }
