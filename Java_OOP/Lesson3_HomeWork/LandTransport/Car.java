@@ -20,7 +20,7 @@ public class Car extends LandTransport {
         return fuelType;
     }
 
-    public String getModel(){
+    public String getModel() {
         return model;
     }
 

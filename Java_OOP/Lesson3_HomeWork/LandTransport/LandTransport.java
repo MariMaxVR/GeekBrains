@@ -3,7 +3,6 @@ package Lesson3_HomeWork.LandTransport;
 import Lesson3_HomeWork.Transport;
 
 public class LandTransport extends Transport {
-    String type;
     int countOfWheels;
 
     public LandTransport(String type, String model, int maxCapacity, String color, int countOfWheels) {
@@ -12,8 +11,8 @@ public class LandTransport extends Transport {
 
     }
 
-    public LandTransport(){
-        
+    public LandTransport() {
+
     }
 
     @Override
