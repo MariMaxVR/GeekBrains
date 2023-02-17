@@ -14,6 +14,13 @@ public class Program {
         car1.refueling();
         System.out.println(car1);
         System.out.println();
+
+        Car car2 = new Car(95, "Mazda");
+
+        System.out.println(car2.getFuelType());
+        System.out.println(car2.getModel());
+        System.out.println();
+
         AirPlane airplane1 = new AirPlane("Пассажирский", "Ту-154", 200, "white", 3, 2, 888);
 
         airplane1.Beep();

@@ -20,6 +20,10 @@ public class Car extends LandTransport {
         return fuelType;
     }
 
+    public String getModel(){
+        return model;
+    }
+
     public void setFuelType(int fuelType) {
         this.fuelType = fuelType;
     }
