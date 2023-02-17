@@ -1,7 +1,5 @@
 package Lesson3_HomeWork.AirTransport;
 
-
-
 public class AirPlane extends AirTransport {
 
     private int flightNumber;
