@@ -36,6 +36,7 @@ public class Tasks {
             default -> "Некорректное значение приоритета или приоритет не установлен, "
                     + "приоритет задаётся в диапазоне от 1 до 4.";
         };
+
     }
 
     public void setPriority(int priority) {

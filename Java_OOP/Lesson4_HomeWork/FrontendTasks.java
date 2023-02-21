@@ -6,7 +6,7 @@ public class FrontendTasks extends Tasks {
 
     public FrontendTasks(int priority, String author, String taskTheme, String deadLine) {
         super(priority, author, taskTheme, deadLine);
-        this.id = ++count;
+        this.id = ++count; // Отдельный автоматический подсчёт номеров заявок определённого типа.
 
     }
 
