@@ -1,5 +1,10 @@
 package Lesson4_HomeWork;
 
-public interface Calendar {
+import java.util.ArrayList;
+import java.util.List;
+
+public class Calendar {
+
+    List<BackendTasks> listOfBackendTasks = new ArrayList<>();
 
 }

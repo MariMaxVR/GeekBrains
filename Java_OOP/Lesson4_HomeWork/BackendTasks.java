@@ -1,6 +1,6 @@
 package Lesson4_HomeWork;
 
-public class BackendTasks extends Tasks implements Calendar {
+public class BackendTasks extends Tasks {
 
     private int id;
 
