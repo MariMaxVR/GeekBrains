@@ -1,10 +1,22 @@
 package Lesson4_HomeWork;
 
-public class FrontendTasks extends Tasks{
+public class FrontendTasks extends Tasks {
 
-    public FrontendTasks(int id, int priority, String author, String startTime, String startDate, String deadLine) {
-        super(id, priority, author, startTime, startDate, deadLine);
+    private int id;
+
+    public FrontendTasks(int priority, String author, String taskTheme, String deadLine) {
+        super(priority, author, taskTheme, deadLine);
+        this.id = ++count;
         
+    }
+
+    @Override
+    public String toString() {
+        return "Фронт" + id + " " + getStartTime() + " " + getStartDate();
+    }
+
+    public int setId() {
+        return id++;
     }
     
 }
