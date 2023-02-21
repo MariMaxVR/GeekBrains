@@ -29,11 +29,12 @@ public class Tasks {
 
     public String getPriority() { // возвращает приоритет в зависимости от кода
         return switch (priority) {
-            case 1 -> "Низкий приоритет";
-            case 2 -> "Средний приоритет";
-            case 3 -> "Повышенный приоритет";
-            case 4 -> "Наивысший приоритет";
-            default -> "Некорректное значение приоритета или приоритет не установлен";
+            case 1 -> "Низкий приоритет.";
+            case 2 -> "Средний приоритет.";
+            case 3 -> "Повышенный приоритет.";
+            case 4 -> "Наивысший приоритет.";
+            default -> "Некорректное значение приоритета или приоритет не установлен, "
+                    + "приоритет задаётся в диапазоне от 1 до 4.";
         };
     }
 
@@ -62,7 +63,7 @@ public class Tasks {
     }
 
     public String getTaskTheme() {
-        return taskTheme;
+        return "\"" + taskTheme + "\"";
     }
 
     public void setTaskTheme(String taskTheme) {
