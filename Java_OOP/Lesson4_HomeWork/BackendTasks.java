@@ -1,8 +1,5 @@
 package Lesson4_HomeWork;
 
-
-
-
 public class BackendTasks extends Tasks implements Calendar {
 
     private int id;
@@ -22,7 +19,5 @@ public class BackendTasks extends Tasks implements Calendar {
                 "Дедлайн: " + getDeadLine() + "\n" +
                 "Важность выполнения: " + getPriority() + "\n";
     }
-
-  
 
 }
