@@ -11,6 +11,7 @@ public class Tasks {
     private String startTime;
     private String startDate;
     private String deadLine;
+
     static int count;
 
     static {
@@ -69,6 +70,18 @@ public class Tasks {
 
     public void setTaskTheme(String taskTheme) {
         this.taskTheme = taskTheme;
+    }
+
+    public int getCount() {
+        return count;
+    }
+
+    public void setDeadLine(String deadLine) {
+        this.deadLine = deadLine;
+    }
+
+    public static void setCount(int count) {
+        Tasks.count = count;
     }
 
 }

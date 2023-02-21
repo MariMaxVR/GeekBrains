@@ -7,6 +7,7 @@ public class BackendTasks extends Tasks {
     public BackendTasks(int priority, String author, String taskTheme, String deadLine) {
         super(priority, author, taskTheme, deadLine);
         this.id = ++count; // Отдельный автоматический подсчёт номеров заявок определённого типа.
+
     }
 
     @Override
