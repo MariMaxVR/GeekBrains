@@ -50,7 +50,7 @@ public class Program {
                 System.out.println("Введите deadline задачи: ");
                 b.setDeadLine(scanner.next());
 
-                // System.out.println(f);
+                // System.out.println(b);
                 Calendar.addToListOfBackendTasks(b); // не срабатывает ?
                 Calendar.getListOfBackendTasks();
             }
