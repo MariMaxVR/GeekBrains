@@ -29,9 +29,41 @@ public class Program {
                 f.setTaskTheme(scanner.next());
                 System.out.println("Введите deadline задачи: ");
                 f.setDeadLine(scanner.next());
-                System.out.println(f);
 
-            } else {
+                // System.out.println(f);
+                Calendar.addToListOfFrontendTasks(f); // не срабатывает ?
+                Calendar.getListOfFrontendTasks();
+
+            }
+
+            else if (choice == 2) {
+
+                System.out.println("Добавляем задачу для отдела Backend.");
+                BackendTasks b = new BackendTasks(0, null, null, null);
+                System.out.print("Введите приоритет задачи: ");
+
+                b.setPriority(scanner.nextInt());
+                System.out.print("Введите автора задачи: ");
+                b.setAuthor(scanner.next());
+                System.out.print("Введите тему задачи: ");
+                b.setTaskTheme(scanner.next());
+                System.out.println("Введите deadline задачи: ");
+                b.setDeadLine(scanner.next());
+
+                // System.out.println(f);
+                Calendar.addToListOfBackendTasks(b); // не срабатывает ?
+                Calendar.getListOfBackendTasks();
+            }
+
+            else if (choice == 3) {
+                Calendar.getListOfFrontendTasks();
+            }
+
+            else if (choice == 4) {
+                Calendar.getListOfBackendTasks();
+            }
+
+            else {
                 scanner.close();
                 break;
             }
