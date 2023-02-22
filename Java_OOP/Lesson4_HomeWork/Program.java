@@ -27,12 +27,14 @@ public class Program {
                 f.setAuthor(scanner.next());
                 System.out.print("Введите тему задачи: ");
                 f.setTaskTheme(scanner.next());
-                System.out.println("Введите deadline задачи: ");
+                System.out.print("Введите deadline задачи: ");
                 f.setDeadLine(scanner.next());
+                System.out.println();
 
-                // System.out.println(f);
-                Calendar.addToListOfFrontendTasks(f); // не срабатывает ?
+
+                Calendar.addToListOfFrontendTasks(f);
                 Calendar.getListOfFrontendTasks();
+                
 
             }
 
@@ -47,11 +49,12 @@ public class Program {
                 b.setAuthor(scanner.next());
                 System.out.print("Введите тему задачи: ");
                 b.setTaskTheme(scanner.next());
-                System.out.println("Введите deadline задачи: ");
+                System.out.print("Введите deadline задачи: ");
                 b.setDeadLine(scanner.next());
+                System.out.println();
 
-                // System.out.println(b);
-                Calendar.addToListOfBackendTasks(b); // не срабатывает ?
+
+                Calendar.addToListOfBackendTasks(b);
                 Calendar.getListOfBackendTasks();
             }
 

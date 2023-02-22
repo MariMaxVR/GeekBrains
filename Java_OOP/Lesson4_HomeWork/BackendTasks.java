@@ -18,7 +18,7 @@ public class BackendTasks extends Tasks {
                 "Время добавления: " + getStartTime() + "\n" +
                 "Дата добавления: " + getStartDate() + "\n" +
                 "Дедлайн: " + getDeadLine() + "\n" +
-                "Важность выполнения: " + getPriority() + "\n";
+                "Важность выполнения: " + getPriority() + "\n\n";
     }
 
 }
