@@ -8,42 +8,44 @@ public class Program {
         Scanner scanner = new Scanner(System.in, "cp866");
         while (true) {
 
-            System.out.print("Какого типа задачу будем добавлять?, \n" +
-                    "1 - Создание задачи для отдела Frontend. \n" +
-                    "2 - Создание задачи для отдела Backend. \n" +
-                    "3 - Просмотр задач отдела Frontend. \n" +
+            System.out.print("Какого типа задачу будем добавлять?\n" +
+                    "1 - Создание задачи для отдела Frontend.\n" +
+                    "2 - Создание задачи для отдела Backend.\n" +
+                    "3 - Просмотр задач отдела Frontend.\n" +
                     "4 - Просмотр задач отдела Backend.\n" +
-                    "0 - Выход.\nВведите значение: ");
+                    "0 - Выход.\n" + 
+                    "Введите значение: ");
 
             int choice = scanner.nextInt();
             if (choice == 1) {
-                System.out.println("Добавляем задачу для отдела Frontend.");
                 FrontendTasks f = new FrontendTasks(0, null, null, null);
+                System.out.println("Добавляем задачу для отдела Frontend.");
+                System.out.print("Введите автора задачи: ");
+                f.setAuthor(scanner.nextLine());
+                System.out.print("Введите описание задачи: ");
+                f.setTaskTheme(scanner.nextLine());
+                System.out.print("Введите крайний срок выполнения задачи: ");
+                f.setDeadLine(scanner.nextLine());
                 System.out.print("Введите приоритет задачи от 0 до 4: ");
                 f.setPriority(scanner.nextInt());
-                System.out.print("Введите автора задачи: ");
-                f.setAuthor(scanner.next());
-                System.out.print("Введите тему задачи: ");
-                f.setTaskTheme(scanner.next());
-                System.out.print("Введите deadline задачи: ");
-                f.setDeadLine(scanner.next());
-
+                
                 Calendar.addToListOfFrontendTasks(f);
-
+                System.out.println();
+                Calendar.getListOfFrontendTasks();
             }
 
             else if (choice == 2) {
 
-                System.out.println("Добавляем задачу для отдела Backend.");
                 BackendTasks b = new BackendTasks(0, null, null, null);
+                System.out.println("Добавляем задачу для отдела Backend.");
+                System.out.print("Введите автора задачи: ");
+                b.setAuthor(scanner.nextLine());
+                System.out.print("Введите описание задачи: ");
+                b.setTaskTheme(scanner.nextLine());
+                System.out.print("Введите крайний срок выполнения задачи: ");
+                b.setDeadLine(scanner.nextLine());
                 System.out.print("Введите приоритет задачи: ");
                 b.setPriority(scanner.nextInt());
-                System.out.print("Введите автора задачи: ");
-                b.setAuthor(scanner.next());
-                System.out.print("Введите тему задачи: ");
-                b.setTaskTheme(scanner.next());
-                System.out.print("Введите deadline задачи: ");
-                b.setDeadLine(scanner.next());
 
                 Calendar.addToListOfBackendTasks(b);
 
