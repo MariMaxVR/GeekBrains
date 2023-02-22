@@ -1,18 +1,15 @@
 package Lesson4_HomeWork;
 
 import java.util.ArrayList;
-
 import java.util.List;
 
 public class Calendar {
-
 
     private static List<BackendTasks> listOfBackendTasks = new ArrayList<>();
     static List<FrontendTasks> listOfFrontendTasks = new ArrayList<>();
 
     public static void getListOfBackendTasks() {
         System.out.println(listOfBackendTasks);
-        
 
     }
 
@@ -22,7 +19,6 @@ public class Calendar {
 
     public static void getListOfFrontendTasks() {
         System.out.println(listOfFrontendTasks);
-        
 
     }
 

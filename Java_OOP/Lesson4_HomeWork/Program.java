@@ -5,23 +5,21 @@ import java.util.Scanner;
 public class Program {
     public static void main(String[] args) {
 
-        Scanner scanner = new Scanner(System.in);
-
+        Scanner scanner = new Scanner(System.in, "cp866");
         while (true) {
 
             System.out.print("Какого типа задачу будем добавлять?, \n" +
                     "1 - Создание задачи для отдела Frontend. \n" +
                     "2 - Создание задачи для отдела Backend. \n" +
                     "3 - Просмотр задач отдела Frontend. \n" +
-                    "4 - Просмотр задач отдела Backend. \n" +
-                    "0 - Выход. \n Введите значение: ");
+                    "4 - Просмотр задач отдела Backend.\n" +
+                    "0 - Выход.\nВведите значение: ");
 
             int choice = scanner.nextInt();
             if (choice == 1) {
                 System.out.println("Добавляем задачу для отдела Frontend.");
                 FrontendTasks f = new FrontendTasks(0, null, null, null);
-                System.out.print("Введите приоритет задачи: ");
-
+                System.out.print("Введите приоритет задачи от 0 до 4: ");
                 f.setPriority(scanner.nextInt());
                 System.out.print("Введите автора задачи: ");
                 f.setAuthor(scanner.next());
@@ -29,12 +27,8 @@ public class Program {
                 f.setTaskTheme(scanner.next());
                 System.out.print("Введите deadline задачи: ");
                 f.setDeadLine(scanner.next());
-                System.out.println();
-
 
                 Calendar.addToListOfFrontendTasks(f);
-                Calendar.getListOfFrontendTasks();
-                
 
             }
 
@@ -43,7 +37,6 @@ public class Program {
                 System.out.println("Добавляем задачу для отдела Backend.");
                 BackendTasks b = new BackendTasks(0, null, null, null);
                 System.out.print("Введите приоритет задачи: ");
-
                 b.setPriority(scanner.nextInt());
                 System.out.print("Введите автора задачи: ");
                 b.setAuthor(scanner.next());
@@ -51,11 +44,9 @@ public class Program {
                 b.setTaskTheme(scanner.next());
                 System.out.print("Введите deadline задачи: ");
                 b.setDeadLine(scanner.next());
-                System.out.println();
-
 
                 Calendar.addToListOfBackendTasks(b);
-                Calendar.getListOfBackendTasks();
+
             }
 
             else if (choice == 3) {
