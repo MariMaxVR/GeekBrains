@@ -3,10 +3,12 @@ package Lesson4_HomeWork;
 public class BackendTasks extends Tasks {
 
     private int id;
+    static int count;
 
     public BackendTasks(int priority, String author, String taskTheme, String deadLine) {
         super(priority, author, taskTheme, deadLine);
-        this.id = ++count; // Отдельный автоматический подсчёт номеров заявок определённого типа.
+        count++;
+        this.id = count; // Отдельный автоматический подсчёт номеров заявок определённого типа.
 
     }
 

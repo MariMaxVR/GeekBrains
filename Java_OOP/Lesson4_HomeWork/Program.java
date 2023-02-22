@@ -13,7 +13,7 @@ public class Program {
                     "2 - Создание задачи для отдела Backend.\n" +
                     "3 - Просмотр задач отдела Frontend.\n" +
                     "4 - Просмотр задач отдела Backend.\n" +
-                    "0 - Выход.\n" + 
+                    "0 - Выход.\n" +
                     "Введите значение: ");
 
             int choice = scanner.nextInt();
@@ -21,6 +21,7 @@ public class Program {
                 FrontendTasks f = new FrontendTasks(0, null, null, null);
                 System.out.println("Добавляем задачу для отдела Frontend.");
                 System.out.print("Введите автора задачи: ");
+                scanner.nextLine();
                 f.setAuthor(scanner.nextLine());
                 System.out.print("Введите описание задачи: ");
                 f.setTaskTheme(scanner.nextLine());
@@ -28,10 +29,9 @@ public class Program {
                 f.setDeadLine(scanner.nextLine());
                 System.out.print("Введите приоритет задачи от 0 до 4: ");
                 f.setPriority(scanner.nextInt());
-                
+
                 Calendar.addToListOfFrontendTasks(f);
-                System.out.println();
-                Calendar.getListOfFrontendTasks();
+
             }
 
             else if (choice == 2) {
@@ -39,6 +39,7 @@ public class Program {
                 BackendTasks b = new BackendTasks(0, null, null, null);
                 System.out.println("Добавляем задачу для отдела Backend.");
                 System.out.print("Введите автора задачи: ");
+                scanner.nextLine();
                 b.setAuthor(scanner.nextLine());
                 System.out.print("Введите описание задачи: ");
                 b.setTaskTheme(scanner.nextLine());

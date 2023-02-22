@@ -12,12 +12,6 @@ public class Tasks {
     private String startDate;
     private String deadLine;
 
-    static int count;
-
-    static {
-        count = 0;
-    }
-
     public Tasks(int priority, String author, String taskTheme, String deadLine) {
         this.priority = priority;
         this.author = author;
@@ -72,16 +66,8 @@ public class Tasks {
         this.taskTheme = taskTheme;
     }
 
-    public int getCount() {
-        return count;
-    }
-
     public void setDeadLine(String deadLine) {
         this.deadLine = deadLine;
-    }
-
-    public static void setCount(int count) {
-        Tasks.count = count;
     }
 
 }
