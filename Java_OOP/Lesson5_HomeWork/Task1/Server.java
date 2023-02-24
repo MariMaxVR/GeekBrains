@@ -52,10 +52,11 @@ public class Server {
 
                         if (operation.equals("+")) {
                             result = number1 + number2;
+
                             dataOutputStream.writeUTF(number1 + " + " + number2 + " = " + result
                                     + "\n" + mathSign);
 
-                            writeToFile(getDate() + "в " + getTime() + " Пользователь ввёл числа: " + number1
+                            writeToFile(getDate() + "в " + getTime() + "Пользователь ввёл числа: " + number1
                                     + " и " + number2 + ", пользователю предоставлен результат сложения = "
                                     + result + "\n");
                             number1 = result;
@@ -64,7 +65,7 @@ public class Server {
                             result = number1 - number2;
                             dataOutputStream.writeUTF(number1 + " - " + number2 + " = " + result
                                     + "\n" + mathSign);
-                            writeToFile(getDate() + "в " + getTime() + " Пользователь ввёл числа: " + number1
+                            writeToFile(getDate() + "в " + getTime() + "Пользователь ввёл числа: " + number1
                                     + " и " + number2 + ", пользователю предоставлен результат вычитания = "
                                     + result + "\n");
                             number1 = result;
@@ -73,18 +74,19 @@ public class Server {
                             result = number1 * number2;
                             dataOutputStream.writeUTF(number1 + " * " + number2 + " = " + result
                                     + "\n" + mathSign);
-                            writeToFile(getDate() + "в " + getTime() + " Пользователь ввёл числа: " + number1
+                            writeToFile(getDate() + "в " + getTime() + "Пользователь ввёл числа: " + number1
                                     + " и " + number2 + ", пользователю предоставлен результат умножения = "
                                     + result + "\n");
                             number1 = result;
 
                         } else if (operation.equals("/")) {
                             result = number1 / number2;
-                            dataOutputStream.writeUTF(number1 + " / " + number2 + " = " + result
+                            String result1 = String.format("%.3f", result);
+                            dataOutputStream.writeUTF(number1 + " / " + number2 + " = " + result1
                                     + "\n" + mathSign);
-                            writeToFile(getDate() + "в " + getTime() + " Пользователь ввёл числа: " + number1
+                            writeToFile(getDate() + "в " + getTime() + "Пользователь ввёл числа: " + number1
                                     + " и " + number2 + ", пользователю предоставлен результат деления = "
-                                    + result + "\n");
+                                    + result1 + "\n");
                             number1 = result;
 
                         } else {
@@ -95,11 +97,11 @@ public class Server {
 
                 } else if (clientAsnwer.equals("2")) {
 
-                    dataOutputStream.writeUTF("Данный функционал пока не реализован." + printMenu);
+                    dataOutputStream.writeUTF("Данный функционал пока не реализован. " + printMenu);
                 }
 
                 else {
-                    dataOutputStream.writeUTF("Некорректное указание пункта меню." + printMenu);
+                    dataOutputStream.writeUTF("Некорректное указание пункта меню. " + printMenu);
                 }
                 clientAsnwer = dataInputStream.readUTF();
 
