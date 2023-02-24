@@ -16,8 +16,10 @@ public class Server {
 
         try (ServerSocket serverSocket = new ServerSocket(888)) {
             writeToFile(getDate() + getTime() + "Запуск сервера выполнен успешно, ожидается подключение клиента...\n");
+            System.out.println("Запуск сервера выполнен успешно, ожидается подключение клиента...");
             Socket socket = serverSocket.accept();
             writeToFile(getDate() + getTime() + "Обнаружено подключение клиента к серверу, выполняю запрос...\n");
+            System.out.println("Обнаружено подключение клиента к серверу, выполняю запрос...");
 
             DataInputStream dataInputStream = new DataInputStream(socket.getInputStream());
             DataOutputStream dataOutputStream = new DataOutputStream(socket.getOutputStream());
