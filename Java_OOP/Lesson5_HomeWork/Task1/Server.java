@@ -25,7 +25,8 @@ public class Server {
             String printMenu = "Выберите режим калькулятора:\n" +
                     "1 - Классический калькулятор;\n" +
                     "2 - Строковый калькулятор;\n" +
-                    "Exit - Завершение программы.";
+                    "Exit - Завершение программы.\n" +
+                    "Введите значение:";
 
             String mathSign = "Введите знак математической операции: ";
 
@@ -81,7 +82,7 @@ public class Server {
 
                         } else if (operation.equals("/")) {
                             result = number1 / number2;
-                            String result1 = String.format("%.3f", result);
+                            String result1 = String.format("%.2f", result);
                             dataOutputStream.writeUTF(number1 + " / " + number2 + " = " + result1
                                     + "\n" + mathSign);
                             writeToFile(getDate() + "в " + getTime() + "Пользователь ввёл числа: " + number1
@@ -125,7 +126,6 @@ public class Server {
         try (FileWriter fileWriter = new FileWriter(file, true)) {
             fileWriter.write(someText);
         } catch (IOException e) {
-            // TODO Auto-generated catch block
             e.printStackTrace();
         }
 
