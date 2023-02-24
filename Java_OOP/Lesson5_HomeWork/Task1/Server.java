@@ -2,64 +2,128 @@ package Lesson5_HomeWork.Task1;
 
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
+import java.io.File;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.net.ServerSocket;
 import java.net.Socket;
+import java.time.LocalDate;
+import java.time.LocalTime;
+import java.time.format.DateTimeFormatter;
 
 public class Server {
     public static void main(String[] args) {
 
         try (ServerSocket serverSocket = new ServerSocket(888)) {
-            System.out.println("Запуск сервера выполнен успешно, ожидается подключение клиента...");
+            writeToFile(getDate() + getTime() + "Запуск сервера выполнен успешно, ожидается подключение клиента...\n");
             Socket socket = serverSocket.accept();
-            System.out.println("Обнаружено подключение клиента к серверу, выполняю запрос...");
+            writeToFile(getDate() + getTime() + "Обнаружено подключение клиента к серверу, выполняю запрос...\n");
 
-            DataOutputStream dataOutputStream = new DataOutputStream(socket.getOutputStream());
             DataInputStream dataInputStream = new DataInputStream(socket.getInputStream());
+            DataOutputStream dataOutputStream = new DataOutputStream(socket.getOutputStream());
+
             String printMenu = "Выберите режим калькулятора:\n" +
-                    "1 - классический калькулятор;\n" +
-                    "2 - строковый калькулятор;\n" +
-                    "0 - завершение программы или переход в главное меню из выбранного режима.";
+                    "1 - Классический калькулятор;\n" +
+                    "2 - Строковый калькулятор;\n" +
+                    "Exit - Завершение программы.";
+
+            String mathSign = "Введите знак математической операции: ";
+
             dataOutputStream.writeUTF(printMenu);
 
+            String clientAsnwer = dataInputStream.readUTF();
+
             while (true) {
-
-                String clientAsnwer = dataInputStream.readUTF();
-
-                if (clientAsnwer.equals("0")) {
-                    System.out.println("Клиент завершил работу с программой.");
+                if (clientAsnwer.equals("Exit")) {
+                    writeToFile("Клиент завершил работу с программой.");
                     break;
                 } else if (clientAsnwer.equals("1")) {
-                    dataOutputStream.writeUTF("Режим классического калькулятора. Введите первое число: ");
-                    double result = Double.parseDouble(dataInputStream.readUTF());
+                    dataOutputStream.writeUTF("Режим классического калькулятора, для выхода введите Exit.\n" +
+                            "Введите первое число: ");
+
+                    double number1 = Double.parseDouble(dataInputStream.readUTF());
+                    double result = number1;
 
                     dataOutputStream.writeUTF("Введите знак математической операции: ");
-                    String operation = dataInputStream.readUTF();
-                    dataOutputStream.writeUTF("Введите второе число: ");
-                    double number = Double.parseDouble(dataInputStream.readUTF());
-                    if (operation.equals("+")) {
-                        dataOutputStream.writeUTF(result + " + " + number + " = " + (result + number));
-                    } else if (operation.equals("-")) {
-                        dataOutputStream.writeUTF(result + " - " + number + " = " + (result - number));
-                    } else if (operation.equals("*")) {
-                        dataOutputStream.writeUTF(result + " * " + number + " = " + (result * number));
-                    } else if (operation.equals("/")) {
-                        dataOutputStream.writeUTF(result + " / " + number + " = " + (result / number));
+                    while (true) {
+                        String operation = dataInputStream.readUTF();
+                        dataOutputStream.writeUTF("Введите второе число: ");
+                        double number2 = Double.parseDouble(dataInputStream.readUTF());
 
-                    } else {
-                        dataOutputStream.writeUTF("Некорректное указание вида операции.");
+                        if (operation.equals("+")) {
+                            result = number1 + number2;
+                            dataOutputStream.writeUTF(number1 + " + " + number2 + " = " + result
+                                    + "\n" + mathSign);
+
+                            writeToFile(getDate() + "в " + getTime() + " Пользователь ввёл числа: " + number1
+                                    + " и " + number2 + ", пользователю предоставлен результат сложения = "
+                                    + result + "\n");
+                            number1 = result;
+
+                        } else if (operation.equals("-")) {
+                            result = number1 - number2;
+                            dataOutputStream.writeUTF(number1 + " - " + number2 + " = " + result
+                                    + "\n" + mathSign);
+                            writeToFile(getDate() + "в " + getTime() + " Пользователь ввёл числа: " + number1
+                                    + " и " + number2 + ", пользователю предоставлен результат вычитания = "
+                                    + result + "\n");
+                            number1 = result;
+
+                        } else if (operation.equals("*")) {
+                            result = number1 * number2;
+                            dataOutputStream.writeUTF(number1 + " * " + number2 + " = " + result
+                                    + "\n" + mathSign);
+                            writeToFile(getDate() + "в " + getTime() + " Пользователь ввёл числа: " + number1
+                                    + " и " + number2 + ", пользователю предоставлен результат умножения = "
+                                    + result + "\n");
+                            number1 = result;
+
+                        } else if (operation.equals("/")) {
+                            result = number1 / number2;
+                            dataOutputStream.writeUTF(number1 + " / " + number2 + " = " + result
+                                    + "\n" + mathSign);
+                            writeToFile(getDate() + "в " + getTime() + " Пользователь ввёл числа: " + number1
+                                    + " и " + number2 + ", пользователю предоставлен результат деления = "
+                                    + result + "\n");
+                            number1 = result;
+
+                        } else {
+                            dataOutputStream.writeUTF("Укажите корректно знак математической операции:");
+                        }
+
                     }
 
                 } else if (clientAsnwer.equals("2")) {
 
-                    dataOutputStream.writeUTF("Режим строчного калькулятора. Введите строку: ");
+                    dataOutputStream.writeUTF("Данный функционал пока не реализован." + printMenu);
                 }
 
                 else {
-                    dataOutputStream.writeUTF("Некорректное указание пункта меню.");
+                    dataOutputStream.writeUTF("Некорректное указание пункта меню." + printMenu);
                 }
+                clientAsnwer = dataInputStream.readUTF();
+
             }
         } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+    }
+
+    static String getDate() {
+        return LocalDate.now().format(DateTimeFormatter.ofPattern("dd:MM:yyyy "));
+    }
+
+    static String getTime() {
+        return LocalTime.now().format(DateTimeFormatter.ofPattern("hh:mm "));
+    }
+
+    static void writeToFile(String someText) {
+        File file = new File("Java_OOP\\Lesson5_HomeWork\\Task1\\log.txt");
+        try (FileWriter fileWriter = new FileWriter(file, true)) {
+            fileWriter.write(someText);
+        } catch (IOException e) {
+            // TODO Auto-generated catch block
             e.printStackTrace();
         }
 

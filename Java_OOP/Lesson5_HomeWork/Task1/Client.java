@@ -10,7 +10,7 @@ import java.util.Scanner;
 public class Client {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        try (Socket socket = new Socket("localhost", 888)) {
+        try (Socket socket = new Socket("127.0.0.1", 888)) {
 
             DataInputStream dataInputStream = new DataInputStream(socket.getInputStream());
             DataOutputStream dataOutputStream = new DataOutputStream(socket.getOutputStream());
@@ -19,7 +19,7 @@ public class Client {
                 System.out.println(dataInputStream.readUTF());
                 String clientAnswer = scanner.nextLine();
                 dataOutputStream.writeUTF(clientAnswer);
-                if (clientAnswer.equals("0")) {
+                if (clientAnswer.equals("Exit")) {
                     scanner.close();
                     System.out.println("Программа завершена успешно. До свидания!");
                     break;
