@@ -9,25 +9,35 @@ public class UserInterfaceView {
     public void runInterface() {
         try (Scanner scanner = new Scanner(System.in)) {
             while (true) {
-                System.out.println("Введите имя города: ");
-                String city = scanner.nextLine();
-
-                System.out.println("Введите 1 для получения погоды на сегодня;" +
-                        "Введите 5 для прогноза на 5 дней; Для выхода введите 0:");
+                System.out.print("Введите 1 для получения погоды на сегодня;\n" +
+                        "Введите 5 для прогноза на 5 дней;\nДля выхода введите 0.\n" +
+                        "Введите значение: ");
 
                 String command = scanner.nextLine();
-
-                // TODO* Сделать метод валидации пользовательского ввода
-
-                if (command.equals("0"))
+                // Небольшая, простая проверка пользовательского ввода:
+                if (command.equals("0")) {
+                    System.out.println("Работа программы завершена. До свидания!");
                     break;
+                } else if (command.equals("1") || command.equals("5")) {
+                    System.out.println("Введите имя города на английском языке: ");
+                    String city = scanner.nextLine();
+                    System.out.println();
+                    try {
+                        controller.getWeather(command, city);
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
+                }
 
-                try {
-                    controller.getWeather(command, city);
-                } catch (IOException e) {
-                    e.printStackTrace();
+                else {
+                    System.out.println("Некорректно указан пункт меню. Выберите действие:");
                 }
             }
         }
+    }
+
+    public static void main(String[] args) {
+        UserInterfaceView userInterfaceView = new UserInterfaceView();
+        userInterfaceView.runInterface();
     }
 }

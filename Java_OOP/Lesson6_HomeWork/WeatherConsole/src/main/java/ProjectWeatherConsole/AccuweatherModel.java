@@ -50,12 +50,10 @@ public class AccuweatherModel implements WeatherModel {
                                                 .build();
 
                                 Response oneDayForecastResponse = okHttpClient.newCall(request_oneDay).execute();
+
                                 String weatherResponse0 = oneDayForecastResponse.body().string();
                                 System.out.println(weatherResponse0);
-                                // TODO: сделать человекочитаемый вывод погоды. Выбрать параметры для вывода на
-                                // свое усмотрение
-                                // Например: Погода в городе Москва - 5 градусов по цельсию Expect showers late
-                                // Monday night
+                                System.out.println();
                                 break;
 
                         case FIVE_DAYS:
@@ -77,11 +75,9 @@ public class AccuweatherModel implements WeatherModel {
                                 Response fiveDaysForecastResponse = okHttpClient.newCall(request_fiveDays).execute();
                                 String weatherResponse1 = fiveDaysForecastResponse.body().string();
                                 System.out.println(weatherResponse1);
-                                // TODO: сделать человекочитаемый вывод погоды. Выбрать параметры для вывода на
-                                // свое усмотрение
-                                // Например: Погода в городе Москва - 5 градусов по цельсию Expect showers late
-                                // Monday night
+                                System.out.println();
                                 break;
+
                 }
         }
 
