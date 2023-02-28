@@ -14,14 +14,20 @@ public class Controller {
     }
 
     public void getWeather(String command, String cityName) throws IOException {
-        Integer userInput = Integer.parseInt(command);
-        switch (variants.get(userInput)) {
-            case ONE_DAY:
-                weatherModel.getWeather(cityName, Period.ONE_DAY);
-                break;
-            case FIVE_DAYS:
-                weatherModel.getWeather(cityName, Period.FIVE_DAYS);
-                break;
+        try {
+            Integer userInput = Integer.parseInt(command);
+            switch (variants.get(userInput)) {
+                case ONE_DAY:
+                    weatherModel.getWeather(cityName, Period.ONE_DAY);
+                    break;
+                case FIVE_DAYS:
+                    weatherModel.getWeather(cityName, Period.FIVE_DAYS);
+                    break;
+            }
+
+        } catch (Exception e) {
+            System.out.println("Некорректно указано название города. Повторите ввод.");
+            System.out.println();
 
         }
     }
