@@ -18,9 +18,10 @@ public class UserInterfaceView {
 
             String command = scanner.nextLine();
 
-            //TODO* Сделать метод валидации пользовательского ввода
+            // TODO* Сделать метод валидации пользовательского ввода
 
-            if (command.equals("0")) break;
+            if (command.equals("0"))
+                break;
 
             try {
                 controller.getWeather(command, city);
