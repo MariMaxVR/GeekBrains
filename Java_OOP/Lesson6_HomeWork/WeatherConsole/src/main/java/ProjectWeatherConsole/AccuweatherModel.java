@@ -56,6 +56,8 @@ public class AccuweatherModel implements WeatherModel {
                                 System.out.println();
                                 break;
 
+//******************************************** 
+
                         case FIVE_DAYS:
                                 HttpUrl httpUrl1 = new HttpUrl.Builder()
                                                 .scheme(PROTOKOL)
