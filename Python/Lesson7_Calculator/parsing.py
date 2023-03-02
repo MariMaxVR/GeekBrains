@@ -1,6 +1,5 @@
 expression = ''
 
-
 def set_expression(text_expression):
     global expression
     expression = text_expression

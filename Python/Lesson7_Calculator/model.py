@@ -4,7 +4,6 @@ operation = ''
 result = 0
 start_point = 0
 
-
 def get_start_point():  # Получение первоначального значения по которому определяется режим программы
     global start_point
     return start_point
