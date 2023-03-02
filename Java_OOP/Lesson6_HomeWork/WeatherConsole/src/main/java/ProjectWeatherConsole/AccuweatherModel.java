@@ -28,8 +28,8 @@ public class AccuweatherModel implements WeatherModel {
         private static final String CITIES = "cities";
         private static final String AUTOCOMPLETE = "autocomplete";
 
-        private static final OkHttpClient okHttpClient = new OkHttpClient();
-        private static final ObjectMapper objectMapper = new ObjectMapper();
+        private static final OkHttpClient OK_HTTP_CLIENT = new OkHttpClient();
+        private static final ObjectMapper OBJECT_MAPPER = new ObjectMapper();
 
         public void getWeather(String cityName, Period weatherPeriod) throws IOException {
                 switch (weatherPeriod) {
@@ -49,14 +49,14 @@ public class AccuweatherModel implements WeatherModel {
                                                 .url(httpUrl0)
                                                 .build();
 
-                                Response oneDayForecastResponse = okHttpClient.newCall(request_oneDay).execute();
-                                
+                                Response oneDayForecastResponse = OK_HTTP_CLIENT.newCall(request_oneDay).execute();
+
                                 String weatherResponse0 = oneDayForecastResponse.body().string();
                                 System.out.println(weatherResponse0);
                                 System.out.println();
                                 break;
 
-//******************************************** 
+                        // ********************************************
 
                         case FIVE_DAYS:
                                 HttpUrl httpUrl1 = new HttpUrl.Builder()
@@ -74,7 +74,7 @@ public class AccuweatherModel implements WeatherModel {
                                                 .url(httpUrl1)
                                                 .build();
 
-                                Response fiveDaysForecastResponse = okHttpClient.newCall(request_fiveDays).execute();
+                                Response fiveDaysForecastResponse = OK_HTTP_CLIENT.newCall(request_fiveDays).execute();
                                 String weatherResponse1 = fiveDaysForecastResponse.body().string();
                                 System.out.println(weatherResponse1);
                                 System.out.println();
@@ -102,10 +102,10 @@ public class AccuweatherModel implements WeatherModel {
                                 .addHeader("accept", "application/json")
                                 .build();
 
-                Response response = okHttpClient.newCall(request).execute();
+                Response response = OK_HTTP_CLIENT.newCall(request).execute();
                 String responseString = response.body().string();
 
-                String cityKey = objectMapper.readTree(responseString).get(0).at("/Key").asText();
+                String cityKey = OBJECT_MAPPER.readTree(responseString).get(0).at("/Key").asText();
                 return cityKey;
         }
 }
