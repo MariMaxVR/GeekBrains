@@ -50,7 +50,6 @@ public class AccuweatherModel implements WeatherModel {
                                                 .build();
 
                                 Response oneDayForecastResponse = OK_HTTP_CLIENT.newCall(request_oneDay).execute();
-
                                 String weatherResponse0 = oneDayForecastResponse.body().string();
                                 System.out.println(weatherResponse0);
                                 System.out.println();
