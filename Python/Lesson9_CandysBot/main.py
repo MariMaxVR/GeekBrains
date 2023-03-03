@@ -8,5 +8,4 @@ async def bot_start(_):
 
 handlers.registred_handlers(dp)
 
-
 executor.start_polling(dp, skip_updates=True, on_startup=bot_start)

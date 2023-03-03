@@ -7,6 +7,7 @@ import view
 async def preview(message: types.Message):
     await view.start_game(message)
 
+
 async def start_game(message: types.Message):
     await model.set_game()
     player_name = message.from_user.first_name
