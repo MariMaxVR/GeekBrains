@@ -1,6 +1,10 @@
+package view;
+
+import presenter.Presenter;
+
 import java.util.Scanner;
 
-public class ConsoleUI implements View {
+public class ConsoleUI implements View{
     private Presenter presenter;
     private Scanner scanner;
 
@@ -9,7 +13,7 @@ public class ConsoleUI implements View {
     }
 
     @Override
-    public void setPresenter(Presenter presenter) {
+    public void setPresenter(Presenter presenter){
         this.presenter = presenter;
     }
 
@@ -20,13 +24,12 @@ public class ConsoleUI implements View {
     }
 
     private String scan() {
-        System.out.println("Введите город:");
+        System.out.println("Введите название города (например Moscow): ");
         return scanner.nextLine();
     }
 
     @Override
-    public void answer(String text) {
+    public void print(String text) {
         System.out.println(text);
     }
-
 }

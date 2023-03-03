@@ -9,5 +9,8 @@
         <module name="WeatherConsole" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="WeatherConsole" target="19" />
+    </bytecodeTargetLevel>
   </component>
 </project>

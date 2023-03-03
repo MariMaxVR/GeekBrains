@@ -1,3 +1,5 @@
+package model.weather;
+
 public class Current {
     private int temperature;
     private String observation_time;
