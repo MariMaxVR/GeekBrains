@@ -52,6 +52,25 @@ public class AccuweatherModel implements WeatherModel {
 
                                 Response oneDayForecastResponse = OK_HTTP_CLIENT.newCall(request_oneDay).execute();
                                 String weatherResponse0 = oneDayForecastResponse.body().string();
+
+                                // String resultDate = OBJECT_MAPPER.readTree(weatherResponse0)
+                                // .get("DailyForecasts")
+                                // .get(0)
+                                // .get("Date")
+                                // .asText();
+
+                                // String resultTemperature = OBJECT_MAPPER.readTree(weatherResponse0)
+                                // .get("DailyForecasts")
+                                // .get(0)
+                                // .get("Temperature")
+                                // .get("Minimum")
+                                // .get("Value")
+                                // .asText();
+
+                                // System.out.println(resultDate);
+                                // System.out.println();
+                                // System.out.println(resultTemperature);
+
                                 System.out.println(weatherResponse0);
                                 System.out.println();
                                 break;
