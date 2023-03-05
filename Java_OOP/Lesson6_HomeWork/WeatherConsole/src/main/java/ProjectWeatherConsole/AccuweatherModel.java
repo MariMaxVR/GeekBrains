@@ -23,7 +23,8 @@ public class AccuweatherModel implements WeatherModel {
         private static final String ONE_DAY = "1day"; // Параметр для отправки запроса на получение погоды на 1 день.
         private static final String FIVE_DAYS = "5day"; // Параметр для отправки запроса на получение погоды на 5 дней.
         private static final String API_KEY = "F3pRUm97bBqlBsdAqGMQB9Hf1SovqZy2"; // Ключ получил свой после регистрации
-                                                                                  // на developer.accuweather.com
+        private static final String METRIC = "metric";
+        private static final String TRUE = "true"; // на developer.accuweather.com
         private static final String API_KEY_QUERY_PARAM = "apikey";
         private static final String LOCATIONS = "locations";
         private static final String CITIES = "cities";
@@ -44,6 +45,8 @@ public class AccuweatherModel implements WeatherModel {
                                                 .addPathSegment(ONE_DAY)
                                                 .addPathSegment(detectCityKey(cityName))
                                                 .addQueryParameter(API_KEY_QUERY_PARAM, API_KEY)
+                                                .addQueryParameter(METRIC, TRUE)
+                                                .addQueryParameter("language", "ru-ru")
                                                 .build();
 
                                 Request request_oneDay = new Request.Builder()
@@ -53,25 +56,32 @@ public class AccuweatherModel implements WeatherModel {
                                 Response oneDayForecastResponse = OK_HTTP_CLIENT.newCall(request_oneDay).execute();
                                 String weatherResponse0 = oneDayForecastResponse.body().string();
 
-                                // String resultDate = OBJECT_MAPPER.readTree(weatherResponse0)
-                                // .get("DailyForecasts")
-                                // .get(0)
-                                // .get("Date")
-                                // .asText();
+                                String resultDate = OBJECT_MAPPER.readTree(weatherResponse0)
+                                                .get("DailyForecasts")
+                                                .get(0)
+                                                .get("Date")
+                                                .asText();
+                                
+                                String resultMinTemperature = OBJECT_MAPPER.readTree(weatherResponse0)
+                                                .get("DailyForecasts")
+                                                .get(0)
+                                                .get("Temperature")
+                                                .get("Minimum")
+                                                .get("Value")
+                                                .asText();
 
-                                // String resultTemperature = OBJECT_MAPPER.readTree(weatherResponse0)
-                                // .get("DailyForecasts")
-                                // .get(0)
-                                // .get("Temperature")
-                                // .get("Minimum")
-                                // .get("Value")
-                                // .asText();
+                                String resultMaxTemperature = OBJECT_MAPPER.readTree(weatherResponse0)
+                                                .get("DailyForecasts")
+                                                .get(0)
+                                                .get("Temperature")
+                                                .get("Maximum")
+                                                .get("Value")
+                                                .asText();
 
-                                // System.out.println(resultDate);
-                                // System.out.println();
-                                // System.out.println(resultTemperature);
-
-                                System.out.println(weatherResponse0);
+                                System.out.printf("Погода в городе %s, на дату: %s\n" +
+                                                "Минимальная температура: %s\nМаксимальная температура: %s.\n",
+                                                UserInterfaceView.getCity(), resultDate, resultMinTemperature,
+                                                resultMaxTemperature);
                                 System.out.println();
                                 break;
 
