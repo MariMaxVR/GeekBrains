@@ -64,11 +64,9 @@ public class HeapSort {
     // Проверка Алгоритма пирамидальной сортировки (сортировка кучей).
 
     public static void main(String args[]) {
-        int arr[] = { 12, 11, 13, 5, 6, 7 };
+        int arr[] = { 1, 3, 6, 23, 13, 35, 43, 54, 88, 2, 4, 78, 15, 3, 5, 6, 7, 0, 12, 9, 7, 2,  1, 9 };
 
         heapSort(arr);
-
-        System.out.println("Отсортированный массив:");
         printArray(arr);
     }
 }
