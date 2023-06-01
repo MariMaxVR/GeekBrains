@@ -1,4 +1,4 @@
-public class Main {
+public class Seminar1HW {
 
     public static void main(String[] args) {
 
