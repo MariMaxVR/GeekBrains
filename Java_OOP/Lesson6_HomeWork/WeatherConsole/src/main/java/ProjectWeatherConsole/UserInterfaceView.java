@@ -50,7 +50,7 @@ public class UserInterfaceView {
 
 
     public void setCity(String city) {
-        this.city = city;
+        UserInterfaceView.city = city;
     }
 
 }
